@@ -1,0 +1,35 @@
+/* Pseudo Elelemet selctor symbol (::) */
+/* 
+1. ::first-letter
+2. ::first-line
+3. ::before
+4. ::after
+5. ::marker
+6. ::selection */
+
+p::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+p::first-line{
+    color:white;
+    background-color: black;
+}
+
+p::before{
+    content: "Welcome";
+}
+p::after{
+    content: "😎";
+}
+/* windows + colon ->emoji */
+
+p::selection{
+    color: white;
+}
+
+li::marker{
+    color: red;
+}
+/* selects the  */

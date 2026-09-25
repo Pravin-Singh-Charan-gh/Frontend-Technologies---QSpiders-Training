@@ -1,0 +1,15 @@
+/* related to siblings */
+
+/* Adjescent sibling selector (+) */
+/* only p tag which has previous adjecent p tag, will be targeted */
+
+section p+p{
+    background-color: orange;
+}
+
+section 
+
+/* general sibling selector (~) */
+/* section p~p{
+    background-color: green;
+} */

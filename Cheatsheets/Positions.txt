@@ -1,0 +1,25 @@
+1 Static:
+=========
+It is the normal behaviour( if we dont give any position property, it will behave static.)
+The child occupies space inside the parent.
+top, left, right, bottom don't work for a statically positioned element.
+
+2. Relative
+=========
+If we give left, right, top, bottom, it will take take this properties relative to its original position, not relative to parent.
+It does not affect the child whether its parent is positioned or not, because it moving relative to its original position.
+
+.child {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+3. Absolute :
+==========
+The element is completely taken out of the natural layout flow of the page. This means:
+Surrounding elements (siblings) behave as if the absolute element does not exist.
+The space the element originally occupied collapses. Other items will move up to fill the vacancy, often causing them to sit directly underneath the absolute element.
+
+.-> then it search for nearest non-static ancestor(relative, absolute, fixed and sticky). It will give left, right relative to that ancestor.
+-> If no ancestor exists, then the container block will be initial -containing block (viewport)

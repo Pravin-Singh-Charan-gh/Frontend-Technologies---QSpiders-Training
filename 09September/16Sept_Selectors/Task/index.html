@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Application Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h3 class="logo">P<span style="color: orangered; font-size: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">y</span><i>Spiders</i></h3>
+            <h3 class="logo">Q<i>Spiders</i></h3>
+            <h3 class="logo">J<i>Spiders</i></h3>
+        </header>
+
+        <main>
+            <section id="heading">
+                <h1>PySpiders, Wakad</h1>
+                <h3>------------------A Software Training Institute------------------</h3>
+                <p><i>The Hub, 4th floor, Dange Chowk Rd, Jai Hind nagar, Thergaon, Pune, Maharashtra 411033</i></p>
+            </section>
+
+            <section id="st-app-form">
+
+                <form action="">
+                    <fieldset>
+                        <legend><h2>Student Application Form</h2></legend>
+                        <!-- choose courses -->
+                        <fieldset class="field">
+                            <legend><h3>Choose Course</h3></legend>
+                            <div><input type="radio" name="course" id="python" value="python" required>Python Full Stack Development</div>
+                            <div><input type="radio" name="course" id="java" value="java">Java Full Stack Development</div>
+                            <div><input type="radio" name="course" id="testing" value="testing">Testing</div>
+                        </fieldset>
+
+                        <fieldset class="field">
+                            <legend><h3>Personal Details</h3></legend>
+                            <div>
+                                <label for="st-name">Name*</label><br>
+                                <input class="input-field" type="text" name="st-name" id="st-name" required>
+                            </div>
+                            <div>
+                                <label for="st-email">Email*</label><br>
+                                <input class="input-field" type="email" name="st-email" id="st-email" required>
+                            </div>
+                            <div>
+                                <label for="st-phone">Phone*</label><br>
+                                <input class="input-field" type="tel" name="st-phone" id="st-phone" required>
+                            </div>
+                            <div>
+                                <label for="image">Upload your Image*</label><br>
+                                <input class="input-field" type="file" name="image" id="image">
+                            </div>
+                        </fieldset> <!--Personal Details-->
+
+                        <fieldset class="field">
+                            <legend><h3>Parents Details</h3></legend>
+                            <!-- father -->
+                            <div> 
+                                <div>
+                                    <label for="f-name">Father's Name*</label><br>
+                                    <input class="input-field" type="text" name="f-name" id="f-name" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="f-phone">Father's Phone*</label><br>
+                                    <input class="input-field" type="tel" name="f-phone" id="f-phone" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="f-occupation">Father's Occupation*</label><br>
+                                    <input class="input-field" type="text" name="f-occupation" id="f-occupation" required>
+                                </div>
+                            </div>
+
+                            <!-- mother -->
+                             <div> 
+                                <div>
+                                    <label for="m-name">Mother's Name*</label><br>
+                                    <input class="input-field" type="text" name="m-name" id="m-name" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="m-phone">Mother's Phone*</label><br>
+                                    <input class="input-field" type="tel" name="m-phone" id="m-phone" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="m-occupation">Mother's Occupation*</label><br>
+                                    <input class="input-field" type="text" name="m-occupation" id="m-occupation" required>
+                                </div>
+                            </div>
+                        </fieldset> <!--Parents Details-->
+
+                        <fieldset class="field">
+                            <legend><h3>Physic Details</h3></legend>
+                            <div>
+                                <label for="gender">Gender*</label><br>
+                                <input type="radio" name="gender" id="male" value="male"> Male <br>
+                                <input type="radio" name="gender" id="female" value="female"> Female <br>
+                            </div>
+                            <div>
+                                <label for="dob">Date of Birth</label><br>
+                                <input class="input-field" type="date" name="dob" id="dob" required>
+                            </div>
+                            <div>
+                                <label for="age">Age*</label><br>
+                                <input class="input-field" type="number" name="age" id="age" required>
+                            </div>
+                            <div>
+                                <label for="bg">Blood Group*</label><br>
+                                <input class="input-field" type="text" name="bg" id="bg">
+                            </div>
+                            <div>
+                                <label for="height">Height*</label><br>
+                                <input class="input-field" type="number" name="height" id="height" required>
+                            </div>
+                            <div>
+                                <label for="weight">Weight in KG*</label><br>
+                                <input class="input-field" type="number" name="weight" id="weight" required>
+                            </div>
+                        </fieldset> <!--Physic Details-->
+
+
+                        <!-- Education Details -->
+                        <fieldset>
+                            <legend><h3>Education Details</h3></legend>
+
+                            <fieldset class="field">
+                                <legend><h4>Graduation</h4></legend>
+                           <div><div>
+                                    <label for="university">University*</label><br>
+                                    <input class="input-field" type="text" name="university" id="university" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="college">College*</label><br>
+                                    <input class="input-field" type="text" name="college" id="college" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="college-address">College Address*</label><br>
+                                    <input class="input-field" type="text" name="college-address" id="college-address">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="degree">Degree*</label><br>
+                                    <select name="degree" id="degree">
+                                        <option value="B.Tech">B.Tech</option>
+                                        <option value="B.E">B.E</option>
+                                        <option value="B.C.A">B.C.A</option>
+                                        <option value="B.Sc">B.Sc</option>
+                                        <option value="B.Com">B.Com</option>
+                                        <option value="B.A">B.A</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="branch">Branch*</label><br>
+                                    <select name="branch" id="branch">
+                                        <option value="CSE">Computer Science</option>
+                                        <option value="IT">Information Technology</option>
+                                        <option value="ME">Mechanical Engineering</option>
+                                        <option value="CE">Civil Engineering</option>
+                                        <option value="EE">Electrical Engineering</option>
+                                        <option value="ECE">Electronics and Communication</option>
+                                    </select>
+                                </div>
+                                <br>                           
+                                <div>
+                                    <label for="degree-yop">Year of Passout*</label><br>
+                                    <input class="input-field" type="number" name="degree-yop" id="degree-yop">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="cgpa">CGPA*</label><br>
+                                    <input class="input-field" type="number" name="cgpa" id="cgpa">
+                                </div>
+                            </div>
+                            </fieldset>
+
+                            <fieldset class="field">
+                                <legend><h4>12th</h4></legend>
+                                <!-- institute details -->
+                                <div>
+                                    <div>
+                                        <label for="12board">Board*</label><br>
+                                        <input class="input-field" type="text" name="12board" id="12board">
+                                    </div><br>
+                                    <div>
+                                        <label for="12school">School</label><br>
+                                        <input class="input-field" type="text" name="12school" id="12school">
+                                    </div><br>
+                                    <div>
+                                        <label for="12adr">School Address*</label><br>
+                                        <input class="input-field" type="text" name="12adr" id="12adr">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="12sub">Subjects*</label><br>
+                                        <input type="checkbox" name="12sub" id="maths" value="Maths">Maths
+                                        <input type="checkbox" name="12sub" id="physics" value="Physics">Physics
+                                        <input type="checkbox" name="12sub" id="chemistry" value="Chemistry">Chemistry
+                                        <input type="checkbox" name="12sub" id="bio" value="Biology">Biology
+                                        <input type="checkbox" name="12sub" id="english" value="English">English
+                                        <input type="checkbox" name="12sub" id="eco" value="Economics">Economics
+                                        <input type="checkbox" name="12sub" id="acc" value="Accounts">Accounts
+                                    </div><br>
+                                    <div>
+                                        <label for="12yop">Year of Passout*</label><br>
+                                        <input class="input-field" type="number" name="12yop" id="12yop">
+                                    </div><br>
+                                    <div>
+                                        <label for="12prcnt">Percentage*</label><br>
+                                        <input class="input-field" type="number" name="12prcnt" id="12prcnt ">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="field">
+                                <legend><h4>10th</h4></legend>
+                                <!-- institute details -->
+                                <div>
+                                    <div>
+                                        <label for="10board">Board*</label><br>
+                                        <input class="input-field" type="text" name="10board" id="10board">
+                                    </div><br>
+                                    <div>
+                                        <label for="10school">School</label><br>
+                                        <input class="input-field" type="text" name="10school" id="10school">
+                                    </div><br>
+                                    <div>
+                                        <label for="10adr">School Address*</label><br>
+                                        <input class="input-field" type="text" name="10adr" id="10adr">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="10sub">Subjects*</label><br>
+                                        <input type="checkbox" name="12sub" id="hindi" value="Hindi">Hindi
+                                        <input type="checkbox" name="12sub" id="ss" value="SS">SS
+                                        <input type="checkbox" name="12sub" id="maths" value="Maths">Maths
+                                        <input type="checkbox" name="12sub" id="bio" value="Biology">Biology
+                                        <input type="checkbox" name="12sub" id="english" value="English">English
+                                        <input type="checkbox" name="12sub" id="eco" value="Economics">Economics
+                                        <input type="checkbox" name="12sub" id="his" value="History">History
+                                    </div><br>
+                                    <div>
+                                        <label for="10yop">Year of Passout*</label><br>
+                                        <input class="input-field" type="number" name="10yop" id="10yop">
+                                    </div><br>
+                                    <div>
+                                        <label for="10prcnt">Percentage*</label><br>
+                                        <input class="input-field" type="number" name="10prcnt" id="10prcnt ">
+                                    </div>
+                                </div>
+
+                            </fieldset>             
+
+                        </fieldset> <!--Education Details-->
+
+                        <center><button>Submit</button></center>
+                    </fieldset>  <!--form-->
+
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

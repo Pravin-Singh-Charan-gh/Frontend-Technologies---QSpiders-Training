@@ -1,0 +1,48 @@
+<!-- 
+placeholder reduces the code. because we dont have to use lable, id and for
+max and min are used only for number and date type formate is "yyyy-mm-dd"
+novalidate is used to remove all validations from the form
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating Forms</title>
+</head>
+<body>
+    <form action="" > <!--novalidate-->
+        <input type="text" placeholder="Enter Username"><br><br>
+        <input type="text" required><br><br>
+        <input type="text" disabled><br><br>
+        <input type="text" size="50"><br><br>
+        <input type="text" maxlength="10" autofocus><br><br>
+        <input type="text" minlength="10"><br><br>
+        <input type="date" max="2026-09-15" min="2026-09-05"><br><br>
+        <input type="number" placeholder="age" step="2" max="100">
+
+        <input type="file" accept=".jpg,.png">
+        <br><br>
+        <input type="text" pattern="[A-Da-z0-9@#$]{7}">
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+<!-- 
+1. novalidate
+2. autofocus
+3. placeholder
+4. required
+how to validate file size?
+5. disabled
+6. size
+7. maxlength
+8. minlength
+9 max
+10 min
+11 accept
+12 pattern
+13 step
+-->

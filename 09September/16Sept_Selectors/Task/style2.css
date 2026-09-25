@@ -1,0 +1,77 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ /* 3 logos */
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+.logo::first-letter{
+    color: orangered;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Institute Heading */
+#heading{
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    border: 3px solid;
+}
+#heading h1,h3,p{
+    margin: 7px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.field{
+    border: 2px dashed orangered;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.field input:nth-of-type(2n){
+    border: 2px solid green;
+}
+
+button{
+    margin: 30px;
+}
+
+#submit{
+    margin: 30px;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: 5px solid gray;
+}
+
+input:not([type="radio"]):not([type="checkbox"]){
+    width: 300px;
+}
+input:active{
+    background-color: brown;
+}
+input:hover{
+    border: 3px solid gold;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+legend:hover{
+    color: red;
+}
+
+label{    
+    display: inline-block;
+    width: 200px;
+    margin-left: 30px;
+}
+.field:nth-of-type(odd){
+    background-color: rgb(244, 244, 237);
+}

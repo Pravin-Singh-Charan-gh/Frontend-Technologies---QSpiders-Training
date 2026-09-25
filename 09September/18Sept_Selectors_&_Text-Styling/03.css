@@ -1,0 +1,18 @@
+.about{
+    height: 400px;
+    width: 800px;
+    background-color: black;
+    padding: 0px 30px;
+    color: white;
+}
+.about h1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    letter-spacing: 5px;
+}
+.about p{
+    text-align: justify;
+    line-height: 40px;
+    text-indent: 100px;
+}

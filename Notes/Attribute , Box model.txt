@@ -1,0 +1,1408 @@
+CSS Attribute Selectors
+CSS attribute selectors let you select HTML elements based on the presence or value of an attribute.
+
+They are useful when you want to style elements without adding extra classes or IDs.
+
+For example:
+
+<input type="text">
+<input type="email">
+<input type="password">
+
+Instead of adding classes to every input, you can select them using their type attribute:
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+This styles only the <input> whose type is "email".
+
+1. Basic Attribute Selector [attribute]
+The simplest form checks whether an attribute exists.
+
+Syntax
+[attribute] {
+  property: value;
+}
+Example
+<input type="text" required>
+<input type="email">
+<input type="password" required>
+[required] {
+  border: 2px solid red;
+}
+Result
+Both of these elements are selected:
+
+<input type="text" required>
+<input type="password" required>
+Because they have the required attribute.
+
+The email input is not selected because it doesn't have required.
+
+2. Attribute Equals [attribute="value"]
+This selects elements where an attribute has an exact value.
+
+Syntax
+[attribute="value"] {
+  property: value;
+}
+Example
+<input type="text">
+<input type="email">
+<input type="password">
+input[type="email"] {
+  background-color: lightblue;
+}
+Only this element is selected:
+
+<input type="email">
+Another example
+<a href="https://example.com">Example</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+a[href="about.html"] {
+  color: red;
+}
+Only the link with exactly href="about.html" is selected.
+
+
+CSS Box Model
+Wrapping the essential content inside container with the help of padding , border , padding and content itself 
+
+The CSS Box Model is one of the most important concepts in CSS. It explains how the size of an HTML element is calculated and how space is created around it.
+
+Every HTML element is treated as a rectangular box.
+
+For example:
+
+<div class="box">
+  Hello World
+</div>
+
+The browser represents this <div> as a box made up of four layers:
+
+--------------Write a diagram which i will attach---------------------------
+
+The four parts are:
+
+Content
+
+Padding
+
+Border
+
+Margin
+
+1. Content
+The content is the actual information inside the element.
+
+For example:
+
+<div>Hello World</div>
+
+Hello World is the content.
+
+You can set its dimensions using:
+
+div {
+  width: 300px;
+  height: 100px;
+}
+
+By default, these width and height values refer to the content area.
+
+So conceptually:
+
+Content
+┌───────────────────┐
+│    Hello World    │
+└───────────────────┘
+     300 × 100
+
+
+
+2. Padding
+Padding is the space between the content and the border.
+
+div {
+  padding: 20px;
+}
+
+Think of padding as internal spacing.
+
+For example:
+
+.box {
+  width: 300px;
+  padding: 20px;
+}
+
+The content has 20px of space around it before reaching the border.
+
+Padding on individual sides
+You can control each side separately:
+
+.box {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+Or use shorthand:
+
+.box {
+  padding: 10px 20px 30px 40px;
+}
+
+The order is:
+
+Top → Right → Bottom → Left
+
+A useful memory trick is TRBL:
+
+Top, Right, Bottom, Left
+
+
+
+3. Border
+The border surrounds the padding and content.
+
+.box {
+  border: 2px solid black;
+}
+
+The three common border properties are:
+
+border-width
+border-style
+border-color
+
+For example:
+
+.box {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+Equivalent shorthand:
+
+.box {
+  border: 2px solid black;
+}
+
+Different borders on different sides
+.box {
+  border-top: 2px solid red;
+  border-right: 3px dashed blue;
+  border-bottom: 4px solid green;
+  border-left: 5px dotted black;
+}
+
+
+
+
+4. Margin
+Margin is the space outside the border.
+
+.box {
+  margin: 20px;
+}
+
+Think:
+
+Padding → space inside
+
+Margin → space outside
+
+You can set margins individually:
+
+.box {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+Or with shorthand:
+
+.box {
+  margin: 10px 20px 30px 40px;
+}
+
+Again:
+
+Top → Right → Bottom → Left
+
+
+Text and font properties in CSS 
+Log in
+Sign up for free
+You said:
+
+Attribute selector in CSS explain in details
+
+ChatGPT said:
+CSS Attribute Selectors
+CSS attribute selectors let you select HTML elements based on the presence or value of an attribute.
+
+They are useful when you want to style elements without adding extra classes or IDs.
+
+For example:
+
+<input type="text">
+<input type="email">
+<input type="password">
+
+Instead of adding classes to every input, you can select them using their type attribute:
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+This styles only the <input> whose type is "email".
+
+1. Basic Attribute Selector [attribute]
+The simplest form checks whether an attribute exists.
+
+Syntax
+[attribute] {
+  property: value;
+}
+
+Example
+<input type="text" required>
+<input type="email">
+<input type="password" required>
+
+[required] {
+  border: 2px solid red;
+}
+
+Result
+Both of these elements are selected:
+
+<input type="text" required>
+<input type="password" required>
+
+Because they have the required attribute.
+
+The email input is not selected because it doesn't have required.
+
+2. Attribute Equals [attribute="value"]
+This selects elements where an attribute has an exact value.
+
+Syntax
+[attribute="value"] {
+  property: value;
+}
+
+Example
+<input type="text">
+<input type="email">
+<input type="password">
+
+input[type="email"] {
+  background-color: lightblue;
+}
+
+Only this element is selected:
+
+<input type="email">
+
+Another example
+<a href="https://example.com">Example</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+a[href="about.html"] {
+  color: red;
+}
+
+Only the link with exactly href="about.html" is selected.
+
+3. Attribute Starts With ^=
+The ^= operator means:
+
+The attribute value starts with this text.
+
+Syntax
+[attribute^="value"] {
+  property: value;
+}
+
+Example
+<a href="https://google.com">Google</a>
+<a href="https://youtube.com">YouTube</a>
+<a href="about.html">About</a>
+
+a[href^="https"] {
+  color: green;
+}
+
+This selects:
+
+<a href="https://google.com">
+<a href="https://youtube.com">
+
+because both values start with:
+
+https
+
+But this isn't selected:
+
+<a href="about.html">
+
+because it doesn't start with https.
+
+Practical use
+You can use it to identify external links:
+
+a[href^="https://"] {
+  color: green;
+}
+
+4. Attribute Ends With $=
+The $= operator means:
+
+The attribute value ends with this text.
+
+Syntax
+[attribute$="value"] {
+  property: value;
+}
+
+Example
+<a href="document.pdf">PDF</a>
+<a href="image.jpg">Image</a>
+<a href="notes.pdf">Notes</a>
+
+a[href$=".pdf"] {
+  color: red;
+}
+
+This selects:
+
+<a href="document.pdf">
+<a href="notes.pdf">
+
+because both end with:
+
+.pdf
+
+Practical example
+Different styles for different file types:
+
+a[href$=".pdf"] {
+  color: red;
+}
+
+a[href$=".jpg"] {
+  color: blue;
+}
+
+a[href$=".zip"] {
+  color: purple;
+}
+
+5. Attribute Contains *=
+The *= operator means:
+
+The attribute value contains this text anywhere.
+
+Syntax
+[attribute*="value"] {
+  property: value;
+}
+
+Example
+<a href="https://google.com">Google</a>
+<a href="https://facebook.com">Facebook</a>
+<a href="https://example.com/google-page">Page</a>
+
+a[href*="google"] {
+  color: red;
+}
+
+This selects:
+
+<a href="https://google.com">
+<a href="https://example.com/google-page">
+
+because "google" appears somewhere in the href.
+
+6. Attribute Contains Word ~=
+The ~= operator checks for a complete word in a space-separated attribute value.
+
+Syntax
+[attribute~="word"] {
+  property: value;
+}
+
+This is particularly useful with attributes such as class.
+
+Consider:
+
+<div class="box red large">Box 1</div>
+<div class="box blue small">Box 2</div>
+<div class="box red">Box 3</div>
+
+You can write:
+
+[class~="red"] {
+  color: red;
+}
+
+This selects:
+
+<div class="box red large">
+<div class="box red">
+
+But it would not match something like:
+
+<div class="box reddish">
+
+because red is not a separate word there.
+
+Difference between *= and ~=
+[class*="red"]
+
+means:
+
+Does the attribute contain "red" anywhere?
+
+While:
+
+[class~="red"]
+
+means:
+
+Does the attribute contain "red" as a separate space-separated word?
+
+7. Attribute Begins With a Specific Hyphenated Value |=
+The |= operator is less commonly used.
+
+It selects an attribute whose value is either:
+
+exactly the specified value, or
+
+starts with that value followed by -.
+
+Example
+<div lang="en">English</div>
+<div lang="en-US">American English</div>
+<div lang="en-GB">British English</div>
+<div lang="fr">French</div>
+
+CSS:
+
+[lang|="en"] {
+  color: blue;
+}
+
+This selects:
+
+<div lang="en">
+<div lang="en-US">
+<div lang="en-GB">
+
+But not:
+
+<div lang="fr">
+
+This selector is particularly associated with language codes.
+
+8. Case-Insensitive Attribute Matching
+CSS can also perform case-insensitive attribute value matching using i.
+
+Example
+<input type="TEXT">
+<input type="text">
+<input type="Text">
+
+Normally:
+
+input[type="text"] {
+  color: red;
+}
+
+may depend on the attribute's defined matching rules, but for explicit case-insensitive matching you can use:
+
+input[type="text" i] {
+  color: red;
+}
+
+The i means:
+
+Match regardless of ASCII letter case.
+
+So values such as:
+
+text
+TEXT
+Text
+TeXt
+
+can match.
+
+9. Case-Sensitive Matching With s
+CSS also provides the s modifier for explicitly requesting case-sensitive matching where supported.
+
+Example:
+
+[data-theme="dark" s] {
+  background: black;
+}
+
+This requests case-sensitive comparison.
+
+In practice, you'll encounter i much more often than s.
+
+10. Combining Attribute Selectors
+You can combine multiple attribute conditions.
+
+Example
+<input type="text" required>
+<input type="email" required>
+<input type="email">
+
+CSS:
+
+input[type="email"][required] {
+  border: 2px solid red;
+}
+
+This selects only:
+
+<input type="email" required>
+
+Both conditions must be satisfied.
+
+11. Attribute Selector With a Class
+You can combine attributes with classes too.
+
+<button class="btn" type="submit">Submit</button>
+<button class="btn" type="button">Cancel</button>
+
+.btn[type="submit"] {
+  background-color: green;
+}
+
+Only the submit button gets the green background.
+
+12. Attribute Selector With an Element
+You can specify the element before the attribute selector.
+
+input[type="text"] {
+  background: yellow;
+}
+
+This means:
+
+Select <input> elements whose type attribute equals "text".
+
+Compare that with:
+
+[type="text"] {
+  background: yellow;
+}
+
+This means:
+
+Select any element whose type attribute equals "text".
+
+The first version is generally more specific about what you intend to target.
+
+13. Attribute Selectors With Multiple Elements
+You can use a comma to select multiple things.
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+}
+
+All three types receive the same styling.
+
+You could also use:
+
+input[type="text"],
+textarea {
+  padding: 10px;
+}
+
+14. Very Useful Real-World Examples
+Styling required fields
+input[required] {
+  border-left: 4px solid red;
+}
+
+Styling disabled fields
+input[disabled] {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+Styling checked checkboxes
+input[type="checkbox"][checked] {
+  accent-color: green;
+}
+
+Note: for the current interactive checked state, :checked is usually the appropriate selector:
+
+input[type="checkbox"]:checked {
+  accent-color: green;
+}
+
+Styling email inputs
+input[type="email"] {
+  border-color: blue;
+}
+
+Styling links to PDFs
+a[href$=".pdf"] {
+  color: red;
+}
+
+Styling external links
+a[href^="https://"] {
+  color: green;
+}
+
+Styling links containing a particular word
+a[href*="github"] {
+  color: black;
+}
+
+15. Attribute Selectors vs Classes
+Suppose you have:
+
+<button class="submit-button">Submit</button>
+
+You could style it with:
+
+.submit-button {
+  background: green;
+}
+
+Or, if the HTML tells you enough about the element:
+
+<button type="submit">Submit</button>
+
+you can use:
+
+button[type="submit"] {
+  background: green;
+}
+
+When should you use which?
+Classes are generally better when you're describing a visual or reusable styling concept:
+
+<button class="primary-button">
+
+Attribute selectors are useful when you want styling to depend on an element's semantic/configuration attribute:
+
+input[type="email"]
+input[disabled]
+input[required]
+a[href$=".pdf"]
+
+16. Attribute Selector Cheat Sheet
+Selector	Meaning	Example
+[attr]	Attribute exists	[required]
+[attr="value"]	Exact value	[type="email"]
+[attr^="value"]	Starts with	[href^="https"]
+[attr$="value"]	Ends with	[href$=".pdf"]
+[attr*="value"]	Contains anywhere	[href*="google"]
+[attr~="value"]	Contains whole word	[class~="active"]
+`[attr	="value"]`	Exact value or value followed by -
+[attr="value" i]	Case-insensitive match	[type="TEXT" i]
+[attr="value" s]	Case-sensitive match	[data-mode="Dark" s]
+
+17. Easy Way to Remember the Operators
+Think of these symbols like this:
+
+[attr]          → exists
+[attr="x"]      → exactly x
+[attr^="x"]     → starts with x
+[attr$="x"]     → ends with x
+[attr*="x"]     → contains x
+[attr~="x"]     → contains the word x
+[attr|="x"]     → x or x-...
+
+For example, with:
+
+<a href="https://example.com/file.pdf">
+
+you could have:
+
+[href^="https"]  /* starts with https */
+[href*="example"] /* contains example */
+[href$=".pdf"]   /* ends with .pdf */
+
+All three would match that link.
+
+The most important ones to master
+If you're learning CSS, focus first on these five:
+
+[required]
+[type="email"]
+[href^="https"]
+[href$=".pdf"]
+[href*="google"]
+
+Once you understand those, the other attribute selectors become much easier.
+
+
+
+You said:
+
+box modelling in CSS explain
+
+ChatGPT said:
+CSS Box Model
+The CSS Box Model is one of the most important concepts in CSS. It explains how the size of an HTML element is calculated and how space is created around it.
+
+Every HTML element is treated as a rectangular box.
+
+For example:
+
+<div class="box">
+  Hello World
+</div>
+
+The browser represents this <div> as a box made up of four layers:
+
+┌───────────────────────────────────────┐
+│                Margin                 │
+│   ┌───────────────────────────────┐   │
+│   │            Border             │   │
+│   │   ┌───────────────────────┐   │   │
+│   │   │        Padding        │   │   │
+│   │   │   ┌───────────────┐   │   │   │
+│   │   │   │    Content    │   │   │   │
+│   │   │   └───────────────┘   │   │   │
+│   │   └───────────────────────┘   │   │
+│   └───────────────────────────────┘   │
+└───────────────────────────────────────┘
+
+The four parts are:
+
+Content
+
+Padding
+
+Border
+
+Margin
+
+1. Content
+The content is the actual information inside the element.
+
+For example:
+
+<div>Hello World</div>
+
+Hello World is the content.
+
+You can set its dimensions using:
+
+div {
+  width: 300px;
+  height: 100px;
+}
+
+By default, these width and height values refer to the content area.
+
+So conceptually:
+
+Content
+┌───────────────────┐
+│    Hello World    │
+└───────────────────┘
+     300 × 100
+
+2. Padding
+Padding is the space between the content and the border.
+
+div {
+  padding: 20px;
+}
+
+Think of padding as internal spacing.
+
+┌─────────────────────────┐
+│       Padding            │
+│   ┌─────────────────┐   │
+│   │     Content     │   │
+│   └─────────────────┘   │
+│       Padding            │
+└─────────────────────────┘
+
+For example:
+
+.box {
+  width: 300px;
+  padding: 20px;
+}
+
+The content has 20px of space around it before reaching the border.
+
+Padding on individual sides
+You can control each side separately:
+
+.box {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+Or use shorthand:
+
+.box {
+  padding: 10px 20px 30px 40px;
+}
+
+The order is:
+
+Top → Right → Bottom → Left
+
+A useful memory trick is TRBL:
+
+Top, Right, Bottom, Left
+
+3. Border
+The border surrounds the padding and content.
+
+.box {
+  border: 2px solid black;
+}
+
+The three common border properties are:
+
+border-width
+border-style
+border-color
+
+For example:
+
+.box {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+Equivalent shorthand:
+
+.box {
+  border: 2px solid black;
+}
+
+Different borders on different sides
+.box {
+  border-top: 2px solid red;
+  border-right: 3px dashed blue;
+  border-bottom: 4px solid green;
+  border-left: 5px dotted black;
+}
+
+4. Margin
+Margin is the space outside the border.
+
+.box {
+  margin: 20px;
+}
+
+Think:
+
+Padding → space inside
+
+Margin → space outside
+
+             Margin
+       ↓               ↓
+   ┌────────────────────────┐
+   │         Border         │
+   │   ┌────────────────┐   │
+   │   │    Padding     │   │
+   │   │  ┌──────────┐  │   │
+   │   │  │ Content  │  │   │
+   │   │  └──────────┘  │   │
+   │   └────────────────┘   │
+   └────────────────────────┘
+
+You can set margins individually:
+
+.box {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+Or with shorthand:
+
+.box {
+  margin: 10px 20px 30px 40px;
+}
+
+Again:
+
+Top → Right → Bottom → Left
+
+Text and Font Properties in CSS
+CSS provides many properties for controlling how text looks, aligns, spaces, and behaves.
+
+It's useful to separate them into two groups:
+
+Font properties → control the typeface, size, weight, style, etc.
+
+Text properties → control alignment, spacing, decoration, transformation, wrapping, etc.
+
+1. Font Properties
+font-family : 
+font-family specifies which font should be used.
+
+p {
+  font-family: Arial, sans-serif;
+}
+
+You can provide multiple fonts as fallbacks:
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+The browser tries the fonts from left to right.
+
+For example:
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+If Arial isn't available, the browser tries Helvetica, then a generic sans-serif font.
+
+Common generic font families
+serif
+sans-serif
+monospace
+cursive
+fantasy
+system-ui
+
+Example:
+
+.code {
+  font-family: monospace;
+}
+
+2. font-size
+Controls the size of the text.
+
+p {
+  font-size: 20px;
+}
+
+Common units include:
+
+font-size: 16px;
+font-size: 1rem;
+font-size: 1.2em;
+font-size: 120%;
+
+Example
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+3. font-weight
+Controls how thick or bold the text appears.
+
+p {
+  font-weight: bold;
+}
+
+Common values:
+
+font-weight: normal;
+font-weight: bold;
+
+You can also use numeric values:
+
+font-weight: 100;
+font-weight: 300;
+font-weight: 400;
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;
+font-weight: 900;
+
+Generally:
+
+100 → very thin
+300 → light
+400 → normal
+500 → medium
+600 → semi-bold
+700 → bold
+900 → very thick
+
+Example:
+
+h1 {
+  font-weight: 700;
+}
+
+400 is generally normal weight and 700 is generally bold.
+
+
+4. font-style
+Controls whether text is normal, italic, or oblique.
+
+p {
+  font-style: italic;
+}
+
+Common values:
+
+font-style: normal;
+font-style: italic;
+
+Example:
+
+em {
+  font-style: italic;
+}
+
+5. line-height
+line-height controls the vertical space occupied by a line of text.
+
+p {
+  line-height: 1.5;
+}
+
+You can use:
+
+line-height: 20px;
+line-height: 1.5;
+line-height: 150%;
+
+For normal body text, unitless values are often convenient:
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+This gives a line height of roughly:
+
+16 × 1.5 = 24px
+
+Why is line-height important?
+Without enough line spacing:
+
+This is a paragraph of text.
+This is another line of text.
+This can become difficult to read.
+
+With appropriate line spacing:
+
+This is a paragraph of text.
+
+This is another line of text.
+
+This can be easier to read.
+
+Text Properties
+Now let's look at properties that control the appearance and arrangement of text.
+
+6. color
+Controls the color of text.
+
+p {
+  color: blue;
+}
+
+You can use different color formats:
+
+color: red;
+color: #ff0000;
+color: rgb(255, 0, 0);
+color: hsl(0, 100%, 50%);
+
+Example:
+
+h1 {
+  color: #2c3e50;
+}
+
+7. text-align
+Controls horizontal alignment of text.
+
+p {
+  text-align: center;
+}
+
+Common values:
+
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+
+Example:
+
+h1 {
+  text-align: center;
+}
+
+text-align: justify
+p {
+  text-align: justify;
+}
+
+This adjusts spacing so that lines generally align with both edges of the text container.
+
+8. text-decoration
+Controls decorations such as underlines.
+
+a {
+  text-decoration: underline;
+}
+
+Common values:
+
+text-decoration: none;
+text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;
+
+Example
+.deleted {
+  text-decoration: line-through;
+}
+
+HTML:
+
+<p class="deleted">Old Price: ₹1000</p>
+
+Result:
+
+Old Price: ₹1000
+
+with a line through the text.
+
+Removing underline from links
+A common example:
+
+a {
+  text-decoration: none;
+}
+
+9. text-transform
+Controls capitalization.
+
+text-transform: uppercase;
+
+Possible values include:
+
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+text-transform: none;
+
+Example:
+
+h1 {
+  text-transform: uppercase;
+}
+
+If HTML contains:
+
+<h1>hello world</h1>
+
+it displays approximately as:
+
+HELLO WORLD
+
+capitalize
+p {
+  text-transform: capitalize;
+}
+
+For example:
+
+hello world
+
+becomes:
+
+Hello World
+
+10. text-indent
+Adds indentation to the first line of a text block.
+
+p {
+  text-indent: 40px;
+}
+
+Example:
+
+    This is the first line of the paragraph.
+This is the second line.
+This is the third line.
+
+Only the first line is indented.
+
+11. letter-spacing
+Controls the space between individual characters.
+
+h1 {
+  letter-spacing: 2px;
+}
+
+Example:
+
+Normal:
+HELLO
+
+letter-spacing: 5px:
+H E L L O
+
+You can also use negative values:
+
+h1 {
+  letter-spacing: -1px;
+}
+
+Be careful with large negative values because they can make text difficult to read.
+
+12. word-spacing
+Controls the space between words.
+
+p {
+  word-spacing: 10px;
+}
+
+For example:
+
+Hello World
+
+can have a larger gap:
+
+Hello          World
+
+13. text-shadow
+Adds a shadow behind text.
+
+Syntax
+text-shadow: horizontal vertical blur color;
+
+Example:
+
+h1 {
+  text-shadow: 2px 2px 4px gray;
+}
+
+Here:
+
+2px → horizontal offset
+2px → vertical offset
+4px → blur radius
+gray → shadow color
+
+You can also write:
+
+h1 {
+  text-shadow: 2px 2px 5px black;
+}
+
+
+
+
+z-index is a CSS property that controls the stacking order of elements when they overlap.
+
+it as controlling which element appears in front of or behind another element.
+
+Higher z-index
+      ↑
+      │
+ ┌───────────┐
+ │ Element C │  z-index: 30
+ └───────────┘
+ ┌───────────┐
+ │ Element B │  z-index: 20
+ └───────────┘
+ ┌───────────┐
+ │ Element A │  z-index: 10
+ └───────────┘
+      │
+      ↓
+Lower z-index
+
+So, when elements overlap:
+
+A higher stacking level generally appears in front of a lower one, provided they participate in the relevant stacking context.
+
+1. Basic Example
+HTML:
+
+<div class="box red"></div>
+<div class="box blue"></div>
+
+CSS:
+
+.box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+If these boxes overlap, their stacking order can be controlled using z-index.
+
+.red {
+  background: red;
+  z-index: 1;
+}
+
+.blue {
+  background: blue;
+  z-index: 2;
+}
+
+The blue box will appear above the red box.
+
+       Blue
+    ┌───────────┐
+    │           │
+    │           │
+    └───────────┘
+       Red
+  ┌───────────────┐
+  │   partially   │
+  │    hidden     │
+  └───────────────┘
+
+Because:
+
+blue z-index = 2
+red  z-index = 1
+
+
+
+

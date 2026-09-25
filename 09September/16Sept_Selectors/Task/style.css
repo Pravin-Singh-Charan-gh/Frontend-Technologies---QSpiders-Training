@@ -1,0 +1,46 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ /* 3 logos */
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+.logo::first-letter{
+    color: orangered;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Institute Heading */
+#heading{
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    border: 3px solid;
+}
+#heading h1,h3,p{
+    margin: 7px;
+}
+
+
+/* FORM */
+fieldset{
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.field{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+button{
+    margin: 30px;
+}
+
+/* 2. Each alternate input will have a different border
+ */
+input:nth-of-type(odd){
+    border: 2px solid green;
+}

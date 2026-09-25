@@ -1,0 +1,43 @@
+/* 
+4. Pseudo class selector  (:)
+a. dynamic p c s : hover, active, focus
+b. structural p c s = 
+:firt-child
+:last-child
+:nth-child()
+:first-of-type
+:last-of-type
+:nth-of-type
+ */
+
+ .parent p:first-child{
+    background-color: purple;
+ }
+ .parent p:last-child{
+    background-color: green;
+ }
+
+
+
+ .parent b:first-child{
+    background-color: aqua;
+ }
+ /* this will not work as <b> is not the first child of parent */
+
+ .parent b:nth-child(3){
+    background-color: blue;
+ }
+ /* this will work as p,b,b(swarup) will get selected  */
+ /* we cannot pass multiple values in nth-child */
+/* we can pass odd(or 2n-1) and even(2n) to style alternate childs */
+
+.parent b:first-of-type{
+    background-color: greenyellow;
+}
+.parent b:last-of-type{
+    background-color: darksalmon;
+}
+
+.parent b:nth-of-type(even){
+    color: red;
+}

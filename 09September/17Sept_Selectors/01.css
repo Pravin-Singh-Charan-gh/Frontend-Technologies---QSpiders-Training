@@ -1,0 +1,29 @@
+/* Attribute Selectors 
+1. Attribute selector : a[href]
+2. Attribute with value selector : a[href="about"]
+*/
+
+a[href]{
+    background-color: green     ;
+}
+a[href="#about"]{
+    background-color: red;
+}
+
+img[alt="pravin1"]{
+    height: 200px;
+}
+
+img[alt="pravin2"]{
+    height: 300px;
+}
+img[alt="pravin3"]{
+    height: 400px;
+}
+
+input[type="text"]{
+    border: 3px solid green ;
+}
+input[type="tel"]{
+    border: 5px solid red ;
+}

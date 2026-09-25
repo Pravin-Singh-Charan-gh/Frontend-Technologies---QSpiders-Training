@@ -1,0 +1,27 @@
+.parent{
+    height: 500px;
+    width: 650px;
+    background-color: yellow;
+    margin: 100px;
+    position: relative;
+    /* it is important to give position to parent if we want its child to behave according to parent */
+}
+.box{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 175px;
+    border: 2px solid black;
+}
+.box:first-child{
+    background-color: green;
+    left: 50px;
+}
+.box:nth-child(2){  
+    background-color: red;
+    left: 250px;
+}
+.box:last-child{
+    background-color: blue;
+    right: 50px;
+}

@@ -1,0 +1,13 @@
+Selectors
+=========
+It is a term or word which is used to target html element to apply CSS styling
+
+We have 32 selectors divided into 5 categories
+
+1. Simple Selector
+====================
+a. id (#)
+b. class (.)
+c. grouping selectors (,)
+d. tagname selectors
+e. universal selector (*)

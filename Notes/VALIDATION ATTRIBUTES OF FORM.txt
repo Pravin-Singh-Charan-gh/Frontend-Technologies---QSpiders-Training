@@ -1,0 +1,85 @@
+VALIDATION ATTRIBUTES OF FORM 
+
+placeholder : this attribute holds the value which appears as false text or faint text in input box 
+
+required : Makes a field mandatory. The form cannot be submitted if this field is empty. and it is without value attribute
+
+minlength : Sets the minimum number of characters allowed. 
+
+maxlength : Sets the maximum number of characters allowed.
+
+max :  Sets the maximum value for number or date inputs.
+
+min :  Sets the minimum value for number or date inputs.
+
+pattern : Defines a regular expression pattern that input must match. syntax : pattern="[A-Za-z0-9@#$]{length in numbers}"
+
+disabled : User can see the value but cannot change it. Disables the input field completely.and it is without value attribute
+
+size : defines the size for specific input feild 
+
+checked : By default the checkbox will get selected without even selecting it. and it is without value attribute
+
+
+step : The step attribute defines the allowed interval between valid values for an input.
+It is mainly used with number, range, date, time, etc.
+
+accept : The accept attribute specifies what types of files a user is allowed to select when using:
+<input type="file">
+Syntax
+<input type="file" accept=".jpg,.png">
+This allows the user to select JPG and PNG files.
+
+autofocus : The autofocus attribute automatically places the cursor/focus on an input when the page loads.
+
+Why Validation Attributes Are Important?
+
+✔ Improve data accuracy
+✔ Prevent wrong form submission
+✔ Reduce JavaScript validation code
+✔ Improve user experience
+
+
+Semantic Tags (Elements): 
+
+Semantic tags : semantic tags are the one who provides or explicitly tells the purpose of using the tags 
+because using div and span tag will not allow us exact meaning of it by its name 
+
+Features : 
+Clearly define the role and content of elements.
+Improve code readability and structure.
+Help browsers and search engines understand page content.
+
+there are few semantic tags such as :
+
+1. The <article> Tag
+The <article> tag is used for content that stands alone and can be independently distributed or reused, such as a blog post or news article.
+
+2. The <aside> Tag
+The <aside> is used to place content in a sidebar i.e. aside from the existing content. It is related to surrounding content. 
+
+3. The Details and Summary Tag
+The "details" defines additional details that the user can hide or view. "summary" defines a visible heading for a "details" element.
+
+4. The Header Tag
+As the name suggests, it is for the header of a section introductory of a page. There can be multiple headers on a page. 
+
+5. The Footer Tag
+Footer located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. 
+
+6. The Main Tag
+It defines the main content of the document. The content inside the main tag should be unique. 
+
+7. the table tag : this tag is used to define or create the table structure of html 
+
+8. The Section Tag
+A page can be split into sections like Introduction, Contact Information, Details, etc and each of these sections can be in a different section tag.
+
+9. The nav Tag
+The nav tag is used to define a set of navigation links in the form of a navigation bar or nav menu.
+
+10. form tag
+This tag is used to define or create form to accepts user inputs 
+
+To remember all semantic tags 
+HDAMNSTAFF - header , details , aside , main , nav , section , table , article , footer , form 

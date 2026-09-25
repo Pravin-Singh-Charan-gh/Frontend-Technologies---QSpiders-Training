@@ -1,0 +1,58 @@
+/* 
+ALL Properties
+1. display : flex
+2. align-items : start,end,center
+3. align-content : 3 values
+4. align-self : 3 values
+5. justify-content: 6 values (start,center,end, space-evenly,space-between,space-around)
+6. flex-wrap ; 3 values
+7. flex-direction : 4 values
+8. flex-flow: 2 values
+9. flex-gorw : 1 values
+10. flex-basis : 1 values
+11. flex-shrink : 1 value
+12. flex (short hand property for grow shrink and basis)
+
+*/
+
+.parent{
+    height: 600px;
+    width: 500px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: wrap row;
+}
+
+.parent .child{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: solid black;
+    color: white;
+    font-size: 50px;
+}
+
+.parent .child:nth-child(1){
+    align-items: flex-start;
+}
+.parent .child:nth-child(3){
+    align-self: flex-start;
+}
+.parent .child:nth-child(5){
+    flex-shrink: 1;
+}
+.parent .child:last-child{
+    flex-basis: 300px;
+}
+
+
+/* short hand property flex-flow
+flex-flow : wrap-row
+
+flex-grow
+flex-shrink
+flex-basis
+*/

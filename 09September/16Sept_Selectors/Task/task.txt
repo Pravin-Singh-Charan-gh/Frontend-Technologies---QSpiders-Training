@@ -1,0 +1,91 @@
+Student Application Form
+=========================
+
+1. Where 15 input fields are mandatory
+2. Each alternate input will have a different border
+3. Properly aligned Form
+4. Every input field should get bg color when we click
+5. Heading should appear in red colour once we visit
+6. Each input field data should be unique
+7. Should accept .png and .jpg files
+8. Should have RegEx in it 
+9. any input should not accept more than 15 characters
+10. border for entire form 
+11. Main heading for entire form
+
+
+Header logos
+PySpiders Qspiders JSpiders
+
+heading 
+name and
+Address
+
+Form
+
+courses
+
+Input fields
+Personal Details : 
+Name
+Email 
+Phone
+Image
+Address : Street, locality, city, state, country, pincode
+
+Parents Details : 
+Father Name:
+Father Contact
+Father Occupation
+Mother Name:
+Mother Contact
+Mother Occupation
+Family Income:
+
+Physical Details
+Gender
+DOB
+Age
+Blood Group
+Height
+Weight
+
+
+Education
+Institute Details
+University
+College
+Institute location : Street, locality, city, state, country, pincode 
+
+Course Details
+Degree  dropdown list with other
+Branch  dropdown list with other 
+passout year
+CGPA Obtained
+
+12th Details
+school details
+Board
+School
+Institute location : Street, locality, city, state, country, pincode 
+
+Academic details
+Stream/Subjects
+Passout year
+Percentage
+
+10th 
+school details
+Board
+School
+Institute location : Street, locality, city, state, country, pincode 
+
+Academic details
+Stream/Subjects
+Passout year
+Percentage
+
+Submit Button
+
+
+add required functionality

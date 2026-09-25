@@ -1,0 +1,59 @@
+
+<!-- Table is a logical structure of row, columns and cells. And it displays the data in systematic manner -->
+<!-- data in th is in centre, td starts from beginning -->
+<!-- cellpadding and cellspacing will not come by default in HTML, we have to add it manually-->
+ <!-- rowspan and colspan are expaning not merging -->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- border is inbuilt attribute in table, no need to add it in style -->
+    <table border="1px" cellpadding="10px" cellspacing="0px" style="background-color: yellow; border: dashed red;" >
+        <tr>
+            <th colspan="4">EMP TABLE</th>
+        </tr>
+        <tr>
+            <th>EID</th>
+            <th>EName</th>
+            <th>Sal</th>
+            <th>Dept.</th>
+        </tr>
+
+        <tr>
+            <td>123</td>
+            <td style="background-color: green;">Vijay Sir</td>
+            <td>150</td>
+            <td>SQL</td>
+        </tr>
+        <tr>
+            <td>142</td>
+            <td>HarshVardhan</td>
+            <td>150</td>
+            <td rowspan="2">JAVA</td>
+        </tr>
+        <tr>
+            <td>153</td>
+            <td>Naveen</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>143</td>
+            <td>Rohit</td>
+            <td>1000</td>
+            <td>Web</td>
+        </tr>
+        <tr>
+            <td>346</td>
+            <td>Anurag Pathak</td>
+            <td>150</td>
+            <td>PYTHON</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

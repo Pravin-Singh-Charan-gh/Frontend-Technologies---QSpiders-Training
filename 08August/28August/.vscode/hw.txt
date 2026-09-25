@@ -1,0 +1,10 @@
+Generate acronym for formatting tags
+
+span, strong, strike, sub, sup, i, u, m, em,ins,
+
+MESSI MISSU BQC
+
+S4 SUMEI
+
+MICE MISS Q BUSS
+Q for quotation

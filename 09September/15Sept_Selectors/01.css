@@ -1,0 +1,31 @@
+/* 2. Combinator Selector 
+========================
+a. Descendant selector
+b. Child selector
+c. Adjescent sibling selector (+)
+d. general sibling selector (~)  */
+
+
+
+/* related to child and parent */
+
+/* Combinator Selector */
+
+/* descendant selector - space( ) */
+section h1{
+    background-color: aqua;
+}
+
+h1{
+    background-color: yellow;
+}
+
+
+/* Child selector */
+/* symbol ( > ) */
+section>h1{
+    background-color: rebeccapurple;
+}
+aside h1{
+    color: brown;
+}

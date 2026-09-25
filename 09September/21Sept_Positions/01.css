@@ -1,0 +1,37 @@
+body{
+    height: 2000px;
+}
+.first{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 100px;
+     
+}
+.second{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: fixed;
+    right: 10px;
+}
+.third{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: static;
+}
+img{
+    position: fixed;
+    left: 500px;
+}
+#circle{
+    height: 100px;
+    width: 100px;
+    /* background-color: orangered; */
+    /* border-radius: 50%;   */
+
+    position: sticky;
+    top: 10px;
+}

@@ -1,0 +1,14 @@
+.a{
+    position: sticky;
+    height: 100px;
+    width: 100px;
+    background: red;
+    bottom: 50px;
+    margin: 5px;
+}
+.a:nth-last-of-type(odd){
+    background: gold;
+}
+body{
+    height: 2000px;
+}

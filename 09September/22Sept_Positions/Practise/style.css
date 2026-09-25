@@ -1,0 +1,103 @@
+/* Parent Container */
+.parent {
+  position: relative;
+}
+
+/* giving commong styling to each face */
+.face {
+  height: 96px;
+  width: 96px;
+  position: absolute;
+}
+/* Giving individual styling to each face */
+.green-box {
+  top: 0px;
+  left: 96px;
+}
+.blue-box {
+  left: 0px;
+  top: 96px;
+}
+.white-box {
+  top: 96px;
+  left: 96px;
+}
+.orange-box {
+  top: 96px;
+  left: 192px;
+}
+.red-box {
+  top: 96px;
+  left: 288px;
+}
+.yellow-box {
+  top: 192px;
+  left: 96px;
+}
+
+/* GIving commong stylig to each cell of rubic's cube */
+.cell {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+/*       */
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.white {
+  background-color: white;
+}
+.orange {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.top-left {
+  top: 0px;
+  left: 0px;
+}
+.top-mid {
+  top: 0px;
+  left: 32px;
+}
+.top-right {
+  top: 0px;
+  left: 64px;
+}
+
+.mid-left {
+  top: 32px;
+  left: 0px;
+}
+.mid-mid {
+  top: 32px;
+  left: 32px;
+}
+.mid-right {
+  top: 32px;
+  left: 64px;
+}
+
+.bottom-left {
+  top: 64px;
+  left: 0px;
+}
+.bottom-mid {
+  top: 64px;
+  left: 32px;
+}
+.bottom-right {
+  top: 64px;
+  left: 64px;
+}

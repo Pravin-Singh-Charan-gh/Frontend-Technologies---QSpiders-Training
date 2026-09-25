@@ -1,0 +1,35 @@
+/* 
+Displa :flex => flex it is used to make html element in one direction
+
+*/
+
+.parent{
+    height: 200px;
+    width: 500px;
+    /* position: relative; */
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    flex-wrap: wrap;
+}
+
+.parent .child{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* position: absolute; */
+}
+
+/* .child:first-child{
+    top: 50px;
+    left: 40px;
+}
+.child:nth-child(2){
+    top: 50px;
+    left: 180px;
+}
+.child:last-child{
+    top: 50px;
+    left: 320px;
+} */

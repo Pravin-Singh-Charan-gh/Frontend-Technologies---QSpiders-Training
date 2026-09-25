@@ -1,0 +1,35 @@
+/* Universal selector */
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    background-color:violet;
+}
+
+/* id selector */
+#first{
+    background-color:orange;
+    color: white;
+}
+#second{
+    color:blue;
+}
+#third{
+    background-color: green;
+}
+
+/* class selector */
+.car{
+    background-color: rgb(215, 250, 247);
+}
+.car2{
+    background-color: rgb(187, 187, 84);
+}
+
+/* tagName selector */
+p{
+    background-color: blueviolet;
+}
+/* grouping selector */
+h3,h4{
+    background-color: white;
+}

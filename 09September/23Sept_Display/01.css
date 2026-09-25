@@ -1,0 +1,36 @@
+/* Display
+1. Inline, Block, inline-block,none, flex, grid 
+
+Interview Important Questions
+Inline vs block (span vs div)
+relative vs absolute
+display : none VS visibility:hidden
+semantic tags
+pattern attribute
+rowspan and colspan
+UTF-8
+explain structure of the HTML
+What is alt attribute
+Specificity in CSS
+*/
+h1{
+    height: 100px;
+    width: 200px;
+    background-color:blueviolet ;
+    display: inline;
+}
+
+span{
+    display:block;
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+}
+
+p{
+    background-color: yellow;
+    height: 100px;
+    width: 2000px;
+    /* display: none; */
+    visibility: hidden;
+}

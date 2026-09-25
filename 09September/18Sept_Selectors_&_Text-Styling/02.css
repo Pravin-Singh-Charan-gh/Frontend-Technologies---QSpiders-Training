@@ -1,0 +1,26 @@
+h1{
+    text-align:center;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+
+    text-shadow: 1px 2px 1px red;
+    /* Right Bottom Bloorness Color */
+
+    text-indent: 200px;
+    /* gives indentation in first line */
+
+    text-decoration-color: green;
+    /* gives colot */
+
+    text-underline-offset: 10px;
+
+    letter-spacing : 2px;
+
+    word-spacing : 20px;
+
+    line-height: 90%;
+}

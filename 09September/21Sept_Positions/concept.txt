@@ -1,0 +1,6 @@
+Positions in css
+1. static
+2. absolute
+3. relative
+4. fixed
+4. sticky

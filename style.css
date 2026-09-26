@@ -1,14 +1,15 @@
-.a{
-    position: sticky;
-    height: 100px;
-    width: 100px;
-    background: red;
-    bottom: 50px;
-    margin: 5px;
+.parent{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
-.a:nth-last-of-type(odd){
-    background: gold;
-}
-body{
-    height: 2000px;
+
+.child{
+    height: 150px;
+    width: 150px;
+    background-color: red;
 }

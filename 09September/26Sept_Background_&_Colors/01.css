@@ -1,0 +1,38 @@
+/* 
+1. Background color
+   by name: purple,red etc
+   hexa value : # A-F and 0-9   (6digits) -> rgb
+                                #ffffff ->white
+                                #000000 -> black
+    rgb -> rgb(0-255,0-255,0-255) 
+    rgba -> a-> alpha -> opacity (0.1 to 0.9)
+    hsl
+    hsla
+2. Gradients
+    linear-gradient
+    radial-gradient
+    conic-gredient (need to write manually)
+3. bg-img
+*/
+
+.mydiv{
+    
+    height: 200px;
+    width: 300px;
+    /* using background-color */
+    background-color: aqua;
+    background-color: #98f830;
+    background-color: #ffffff;
+    background-color: #000000;
+    background-color: rgb(255,0,0,0); 
+    /* alpha 0 means no background */
+
+
+    /* using backgroung property */
+    background:linear-gradient(orange,orange,orange,white,white,green,green,green);
+    /* can provide degree to tilt gredient as first argument. it is possible in linier gredient only */
+
+    background: radial-gradient(orange,white,green);
+
+    background: conic-gredient(orange,white,green);
+}

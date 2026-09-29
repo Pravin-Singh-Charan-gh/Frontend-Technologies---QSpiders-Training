@@ -1,0 +1,51 @@
+/* 
+ box effect properties
+ border style : solid,double ,dashed, dotted 
+ 3D : ridge, groove, inset, 
+
+ If we dont give border style, the border will not diplayed
+ shorthand => border : border width border-style border-color;
+ by default the border color is same as text in the box and its default width is 2px
+
+none is used to not display border
+
+border-shadow : right bottom width bloor(in px) shadow-spread
+Specificity ID>class>tag
+*/
+body{
+    background-color: black;
+}
+
+.bg{
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: white;
+    /* shorthand border : border width border-style border-color; */
+    border: 10px solid blue;
+
+    border-left:10px solid green;
+    border-top: none;
+    border-style: dashed;
+    border-style: double;
+    border-style: dotted;
+    border-style: ridge;
+    border-style: groove;
+    border-style: inset;
+    border-style: ouset;
+    color: white;
+
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/055/143/187/small_2x/silhouette-of-a-bride-and-groom-embracing-capturing-a-romantic-moment-in-their-wedding-attire-against-a-light-background-png.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin: 100px;
+
+    border: 10px solid white;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 50px 5px white;
+
+    
+}

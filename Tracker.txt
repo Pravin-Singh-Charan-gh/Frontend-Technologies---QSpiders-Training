@@ -1,0 +1,19 @@
+01/10/2026
+==========
+=> parent properties
+Grid :
+display: grid
+grid-template-column : 50% 50%;
+=> when we will give gap, the boxes will go out of parent
+grid-template-column : repeat(4,1fr);
+grid-template-row : 25% 25% 25% 25%;
+grid-template-row : repeat(4,1fr);
+
+item-properties
+=> grid-column-start
+=> grid-column-end
+1 to number of columns+1
+
+=> grid-row-start
+=> grid-row-end 
+-> 1 to number of rows + 1

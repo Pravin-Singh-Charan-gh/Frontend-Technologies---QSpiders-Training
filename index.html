@@ -1,59 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- The scrolling container -->
-<div class="product-scroll-container">
-  
-  <!-- Individual Product Cards -->
-  <div class="product-card">
-    <img src="product1.jpg" alt="Product Name">
-    <h3>Premium Running Shoes</h3>
-    <p>$120.00</p>
-  </div>
-  
-  <div class="product-card">
-    <img src="product2.jpg" alt="Product Name">
-    <h3>Waterproof Backpack</h3>
-    <p>$85.00</p>
-  </div>
-  
-  <div class="product-card">
-    <img src="product3.jpg" alt="Product Name">
-    <h3>Wireless Headphones</h3>
-    <p>$199.00</p>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="product-card">
-    <img src="product4.jpg" alt="Product Name">
-    <h3>Smart Fitness Watch</h3>
-    <p>$150.00</p>
-  </div>
+    <title>GridSpace</title>
 
-    <div class="product-card">
-    <img src="product4.jpg" alt="Product Name">
-    <h3>Smart Fitness Watch</h3>
-    <p>$150.00</p>
-  </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <div class="product-card">
-    <img src="product4.jpg" alt="Product Name">
-    <h3>Smart Fitness Watch</h3>
-    <p>$150.00</p>
-  </div>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
 
-    <div class="product-card">
-    <img src="product4.jpg" alt="Product Name">
-    <h3>Smart Fitness Watch</h3>
-    <p>$150.00</p>
-  </div>    
+      /* =========================
+           MAIN GRID
+        ========================== */
 
-</div>
+      .container {
+        width: 1100px;
+        height: 700px;
 
-</body>
+        margin: 40px auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        gap: 10px;
+      }
+
+      /* =========================
+           NAVBAR
+        ========================== */
+
+      .header {
+        background-color: #1e1b4b;
+
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 30px;
+
+        border-radius: 15px;
+
+        border: 1px solid #3730a3;
+      }
+
+      .logo {
+        font-size: 25px;
+        font-weight: bold;
+
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: #a78bfa;
+      }
+
+      .menu {
+        display: flex;
+        gap: 8px;
+      }
+
+      .menu span {
+        color: #cbd5e1;
+
+        padding: 10px 16px;
+
+        font-size: 14px;
+
+        border-radius: 8px;
+
+        transition: 0.3s;
+      }
+
+      .menu span:hover {
+        background-color: #7c3aed;
+        color: white;
+      }
+
+      /* =========================
+           HERO SECTION
+        ========================== */
+
+      .hero {
+        background-color: #1e293b;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        grid-row-start: 2;
+        grid-row-end: 5;
+
+        border-radius: 15px;
+
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .small-title {
+        color: #a78bfa;
+        font-size: 13px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 12px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+
+        line-height: 1.1;
+
+        margin-bottom: 20px;
+      }
+
+      .hero h1 span {
+        color: #a78bfa;
+      }
+
+      .hero p {
+        color: #94a3b8;
+
+        font-size: 17px;
+
+        line-height: 1.7;
+
+        margin-bottom: 30px;
+      }
+
+      .button {
+        width: 150px;
+
+        padding: 14px 20px;
+
+        background-color: #7c3aed;
+
+        color: white;
+
+        text-align: center;
+
+        border-radius: 8px;
+
+        font-weight: bold;
+      }
+
+      /* =========================
+           CARDS
+        ========================== */
+
+      .card {
+        border-radius: 15px;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+      }
+
+      .card h2 {
+        font-size: 22px;
+
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        color: #cbd5e1;
+
+        line-height: 1.5;
+
+        font-size: 14px;
+      }
+
+      .card-number {
+        font-size: 40px;
+
+        font-weight: bold;
+      }
+
+      /* Different card colors */
+
+      .purple {
+        background-color: #4c1d95;
+      }
+
+      .blue {
+        background-color: #075985;
+      }
+
+      .pink {
+        background-color: #9d174d;
+      }
+
+      .green {
+        background-color: #166534;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- =========================
+             NAVBAR
+        ========================== -->
+
+      <header class="header">
+        <div class="logo">GRID<span>SPACE</span></div>
+
+        <nav class="menu">
+          <span>Home</span>
+          <span>About</span>
+          <span>Projects</span>
+          <span>Contact</span>
+        </nav>
+      </header>
+
+      <!-- =========================
+             HERO
+        ========================== -->
+
+      <section class="hero">
+        <div class="small-title">Creative Developer</div>
+
+        <h1>
+          Build ideas.
+          <br />
+          <span>Design the future.</span>
+        </h1>
+
+        <p>
+          A simple and beautiful webpage created using basic CSS Grid
+          properties. This layout demonstrates columns, rows, gaps and grid
+          positioning.
+        </p>
+
+        <div class="button">Explore More</div>
+      </section>
+
+      <!-- =========================
+             CARD 1
+        ========================== -->
+
+      <div class="card purple">
+        <div>
+          <div class="small-title">Projects</div>
+
+          <h2>Creative Work</h2>
+
+          <p>Designing clean and meaningful digital experiences.</p>
+        </div>
+
+        <div class="card-number">24+</div>
+      </div>
+
+      <!-- =========================
+             CARD 2
+        ========================== -->
+
+      <div class="card blue">
+        <div>
+          <div class="small-title">Experience</div>
+
+          <h2>Learning</h2>
+
+          <p>Exploring HTML, CSS and the power of Grid layouts.</p>
+        </div>
+
+        <div class="card-number">02</div>
+      </div>
+
+      <!-- =========================
+             CARD 3
+        ========================== -->
+
+      <div class="card pink">
+        <div>
+          <div class="small-title">Design</div>
+
+          <h2>Visual Style</h2>
+
+          <p>Simple colors, spacing and typography create beautiful layouts.</p>
+        </div>
+
+        <div class="card-number">08</div>
+      </div>
+
+      <!-- =========================
+             CARD 4
+        ========================== -->
+
+      <div class="card green">
+        <div>
+          <div class="small-title">Goal</div>
+
+          <h2>Keep Learning</h2>
+
+          <p>Every new CSS property is another step toward better websites.</p>
+        </div>
+
+        <div class="card-number">∞</div>
+      </div>
+    </div>
+  </body>
 </html>

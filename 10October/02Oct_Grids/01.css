@@ -1,0 +1,17 @@
+.parent{
+    background-color: royalblue;
+    height: 300vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    place-items: center;
+    /* row-gap: 20px; */
+}
+
+.child{
+    border: solid;
+    height: 400px;
+    width: 250px;
+}

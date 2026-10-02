@@ -1,0 +1,37 @@
+/* Border image
+it is necessary to give border before giving border-image
+*/
+.bg{
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    border: 40px solid black;
+    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHEO6YXFqc0I9zIwiF8uiwq2tMxlj3rO-JF-XXRFFTA&s")
+    stretch 30;
+    /* need to give stretch and value between 30 and 100 */
+    visibility: hidden;
+    visibility: visible;
+
+    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
+    resize: both;
+    resize: horizontal;
+    resize: vertical;
+
+    outline: 60px solid red;
+    outline-radius:20px ;
+    outline-offset: 20px;    
+}
+
+/* visiblity nonr to song in previous project */
+/* border properties
+border
+border-radius
+box-shadow
+border-image
+overflow
+resize
+visibility
+outline
+*/

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+/* =========================
+     MAIN GRID
+  ========================== */
+.container {
+  width: 1100px;
+  height: 700px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+/* =========================
+     NAVBAR
+  ========================== */
+.header {
+  background-color: #1e1b4b;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-radius: 15px;
+  border: 1px solid #3730a3;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: #a78bfa;
+}
+.menu {
+  display: flex;
+  gap: 8px;
+}
+.menu span {
+  color: #cbd5e1;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.menu span:hover {
+  background-color: #7c3aed;
+  color: white;
+}
+/* =========================
+     HERO SECTION
+  ========================== */
+.hero {
+  background-color: #1e293b;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.small-title {
+  color: #a78bfa;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.hero h1 span {
+  color: #a78bfa;
+}
+.hero p {
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.button {
+  width: 150px;
+  padding: 14px 20px;
+  background-color: #7c3aed;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+/* =========================
+     CARDS
+  ========================== */
+.card {
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.card-number {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* Different card colors */
+.purple {
+  background-color: #4c1d95;
+}
+.blue {
+  background-color: #075985;
+}
+.pink {
+  background-color: #9d174d;
+}
+.green {
+  background-color: #166534;
+}

@@ -1,0 +1,41 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-out;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes move{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 1100px;
+        background-color: yellow;
+    }
+    50%{
+        top: 450px;
+        left: 1100px;
+        transform: rotate(90deg);
+    }
+    75%{
+        top: 450px;
+        left: 0;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,84 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* Main Navbar - CSS Grid Layout */
+.navbar {
+    align-items: center;
+    padding: 1.2rem 8%;
+    background-color: #1e293b;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #38bdf8; /* Accent color */
+}
+
+/* Right Content Area */
+.right-content {
+    /* Push list to the far right */
+    justify-self: end; 
+}
+
+/* Navigation List - CSS Grid for Links & Button */
+.right-content ul {
+    align-items: center;
+    list-style: none;
+}
+
+/* Links Styling */
+.right-content a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.right-content a:hover {
+    color: #38bdf8;
+}
+
+/* Login Button Styling */
+.right-content button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-content button:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* ===================================================
+   Responsive Breakpoints (Mobile & Tablet)
+   =================================================== */
+

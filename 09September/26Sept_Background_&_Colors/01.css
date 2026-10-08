@@ -29,7 +29,7 @@
 
 
     /* using backgroung property */
-    background:linear-gradient(orange,orange,orange,white,white,white,green,green,green);
+    background-image:linear-gradient(orange,orange,orange,white,white,white,green,green,green);
     /* can provide degree to tilt gredient as first argument. it is possible in linier gredient only */
 
     /* background: radial-gradient(orange,white,green);

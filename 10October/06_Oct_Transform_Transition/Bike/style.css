@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* align-content:flex-end; */
+    flex-direction: column;
+    justify-content:space-around ;
+    overflow: hidden;
+
+    background: 
+        url("road.png") center bottom/auto 200px repeat-x,
+        url("https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-beach-coconut-tree-png-image_11596766.png") center bottom / auto 500px repeat-x, 
+        url("https://static.vecteezy.com/system/resources/thumbnails/070/053/462/small/breathtaking-mountain-landscape-with-rugged-terrain-png.png") center bottom / cover no-repeat;
+        
+    background-color: #87CEEB; 
+}
+.clouds{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.clouds img{
+    height: inherit;
+}
+.bike{
+    height: 200px;
+    left: -50px;
+    margin-bottom: 120px;
+}
+.bike-body{
+    height: 250px;
+    z-index: 2;
+}
+.wheel{
+    height: 105px;
+    position: relative;
+    z-index:-1;
+}
+.wheel:first-child{
+    top: 22px;
+    left:175px;
+}
+.wheel:last-child{
+    top: 30px;
+    right: 165px;
+} 
+.parent:hover{
+    .bike{
+        translate:1000px;
+        transition: 10s;
+    }
+    .wheel{
+        transform: rotate(10000deg);
+        transition: 10s;
+
+    }
+}

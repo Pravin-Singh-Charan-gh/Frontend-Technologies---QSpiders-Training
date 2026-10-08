@@ -17,3 +17,11 @@ item-properties
 => grid-row-start
 => grid-row-end 
 -> 1 to number of rows + 1
+
+TASK : create a webpage using grid layout
+
+02/10/26
+========
+grid(how to make it responsive )
+grid-template-column: repeat(auto-fit,min-max(270px,1fr))
+float

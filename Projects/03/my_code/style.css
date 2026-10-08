@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 80px;
+    width: 100%;
+    padding: 0px 50px;
+    background-color: rgb(26, 26, 49);
+    color: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar .logo span{
+    color: wheat;
+}
+.navbar .right-content{
+    width: 40%;
+}
+.navbar .right-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .right-content ul li{
+    list-style: none;
+}
+.navbar .right-content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO */
+.container{
+    margin: 40px auto;
+    width: 86%;
+    outline: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.container .featured{
+    padding: 30px;
+}
+.container .featured h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.container .featured p{
+    margin-bottom: 15px;
+}
+.container .featured .button{
+    height: 30px;
+    background-color: #4524ca;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container .featured .button:hover{
+    outline: 5px solid gold;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: #0f0b1f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+/* 
+Q10. Final challenge — Advanced media queries 🔥
+Apply these styles to .menu only when all three conditions are true:
+Viewport width is between 500px and 900px, inclusive.
+The device supports hover.
+The user prefers dark mode.
+Required styles:
+background-color: black
+color: white
+Write one media query combining all three conditions with and.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(500<=width<=900) and (hover: hover) and (prefers-color-scheme: dark){
+    .menu{
+        background-color: black;
+        color: white;
+    }
+}

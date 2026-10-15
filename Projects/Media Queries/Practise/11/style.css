@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 200px;
+    background-color: red;
+}
+@media(max-width:600px){
+    .container{
+        width: 100%;
+    }
+}
+@media(601px<=width<=1024px){
+    .container{
+        width: 80%;
+    }
+}
+@media(min-width:1024px){
+    .container{
+        width: 60%;
+    }
+}

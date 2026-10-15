@@ -1,0 +1,19 @@
+/* 
+Q6. Reduced motion ♿
+Write a media query that removes animations from all elements when the user has enabled the reduced-motion preference in their operating system.
+
+Hint: The media feature is prefers-reduced-motion, and its relevant value is reduce.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(prefers-reduced-motion: reduce){
+    *{
+        animation: none;
+        transform: none;
+        transition: none;
+    }
+}

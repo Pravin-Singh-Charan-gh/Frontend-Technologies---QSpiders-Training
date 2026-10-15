@@ -1,0 +1,24 @@
+/* 
+Q10. Combine conditions
+
+Write a media query that sets .card width to 50% only when the screen width is at least 768px and the device is in landscape orientation.
+
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: red;
+    height: 300px;
+    width: 100%;
+}
+@media(min-width:768px) and (orientation: landscape){
+    .card{
+        width: 50%;
+    }
+}

@@ -1,0 +1,30 @@
+/* 
+Q5. Responsive layout
+Suppose your container uses CSS Grid:
+
+css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+Write a media query to make .container display as a single column when the screen width is 768px or less.
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    height: 200px;
+    outline: 1px solid;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media(max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

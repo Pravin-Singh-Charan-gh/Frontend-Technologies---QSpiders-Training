@@ -1,0 +1,17 @@
+/* 
+Q3. Hide an element
+You have this HTML:
+<div class="box">Hello World</div>
+Write a media query to hide .box when the screen width is 500px or less.
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@media (max-width:500px){
+    .box{
+        display: none;
+    }
+}

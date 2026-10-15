@@ -1,0 +1,25 @@
+/* Q7. Change navigation direction
+Given this CSS:
+
+css
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+Write a media query to change .nav to flex-direction: column when the screen width is 480px or less.
+ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:480px){
+    .nav{
+        flex-direction: column;
+    }
+}

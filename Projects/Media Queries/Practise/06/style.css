@@ -1,0 +1,18 @@
+/* 
+Q6. Tablet-specific styling
+Write a media query that sets all paragraph (p) elements to a font-size of 18px only when the screen width is between 600px and 900px, inclusive.
+
+Hint: You need both min-width and max-width in the same media query.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@media(min-width:600px) and (max-width:900px){
+    p{
+        font-size: 24px;
+    }
+}

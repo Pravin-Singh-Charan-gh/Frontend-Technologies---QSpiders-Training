@@ -14,8 +14,8 @@
 
     background: 
         url("road.png") center bottom/auto 200px repeat-x,
-        url("https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-beach-coconut-tree-png-image_11596766.png") center bottom / auto 500px repeat-x, 
-        url("https://static.vecteezy.com/system/resources/thumbnails/070/053/462/small/breathtaking-mountain-landscape-with-rugged-terrain-png.png") center bottom / cover no-repeat;
+        url("./tree.png") center bottom / auto 500px repeat-x, 
+        url("mountain.png") center bottom / cover no-repeat;
         
     background-color: #87CEEB; 
 }

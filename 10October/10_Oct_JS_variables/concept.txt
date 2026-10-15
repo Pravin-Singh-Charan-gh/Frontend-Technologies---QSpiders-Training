@@ -1,0 +1,47 @@
+Variables : a block of memory or container which is used to store any kind of data
+
+WE do not mention data type explicitly
+
+var, let , const
+
+var a = 10
+var a = "Ishu"
+var name = "42"
+
+let n1 = 100
+let n2 = "200"
+let place = 1000
+
+
+DIFFERENCE
+=========
+var -> depricated(not used by developers)
+----
+Declaration     :   YES , var a 
+Initialization  :   YES, a = 10
+Re-Declaration  :   YES, const a
+Re-Initialization : YES, a = "Pune"
+
+let -> mostly used variable 
+----
+Declaration     : YES, let a
+Initialization  : YES, a = 10
+Re-Declaration  : NO, let a -ERROR
+Re-Initialization :  YES, a = "Pune"
+
+const -> rarely used variable  
+----- 
+Declaration     : YES, const a = 13
+Initialization  : Declaration & Initialization must be in same line
+Re-Declaration  : NO 
+Re-Initialization :  NO 
+
+
+
+WINDOW Object
+==============
+any variable which declared using var is a window property
+var is global scoped and can be accessed without getting declared
+
+let and const are block scopped and cannot be accessed without getting declared
+(means it can be redecalred in another scope(also const))

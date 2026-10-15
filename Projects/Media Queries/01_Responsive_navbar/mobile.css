@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.right {
+    display: none;
+    width: 100%;
+}
+
+.right.active {
+    display: block;
+}
+
+.right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.right ul li a:hover {
+    color: #00bcd4;
+}
+
+.right ul li button {
+    background: #00bcd4;
+    color: #222;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right ul li button:hover {
+    background: #0097a7;
+    color: white;
+}

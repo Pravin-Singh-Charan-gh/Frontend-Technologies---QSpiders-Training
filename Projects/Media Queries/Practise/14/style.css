@@ -1,0 +1,19 @@
+/* 
+
+Q4. Touchscreen devices 📱
+Set .button padding to 16px when the primary input mechanism has limited pointer accuracy.
+
+Hint: The media feature is pointer, and the value you're looking for is coarse.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (pointer: coarse) {
+    .button {
+        padding: 16px;
+    }
+}

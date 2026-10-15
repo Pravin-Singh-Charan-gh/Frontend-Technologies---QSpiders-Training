@@ -1,0 +1,16 @@
+/* 
+Q2. Dark mode 🌙
+Change the body background color to #222 and text color to white when the user's operating system prefers a dark color scheme.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: #222;
+        color: white;
+    }
+}

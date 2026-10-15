@@ -1,0 +1,24 @@
+/* 
+Q9. Orientation and breakpoint
+Display .gallery as a three-column grid only when the viewport is in landscape orientation and is at least 1000px wide.
+
+Your media query must set display: grid and create three equal-width columns using grid-template-columns.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    outline: 1px solid;
+}
+@media(orientation: landscape) and (1000px<=width){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

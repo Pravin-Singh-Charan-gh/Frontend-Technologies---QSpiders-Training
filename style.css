@@ -1,19 +1,72 @@
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
-  
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.card {
+.navbar{
+  min-height: 60px;
+  width: 100%;
+  background-color: bisque;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar .logo{
+  min-height: 60px;
+  min-width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  border: 1px solid;
+
+  font-size: 25px;
+  font-weight: 600;
+}
+.navbar .logo span{
+  color: purple;
+}
+.navbar .right{
+  align-items: center;
+}
+.navbar .right ul{
+  min-height: 60px;
+  min-width: 360px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar .right ul li a{
+  text-decoration: none;
+  color: black;
+}
+.navbar .right ul li a button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(28, 16, 131);
+  color: white;
+  font-weight: 500;
+}
+.navbar .right ul li a button:hover{
+  background-color: black;
+  outline: 1px solid blue;
+  transition: 0.5s;
+}
+
+@media (max-width:400px) {
+  .navbar{
+    min-height: 40px;
+    align-items: center;
+  }
+  .navbar .right{
+    min-height: 40px;
+  }
+  .navbar .right ul{
+    min-height: 40px;
+  }
 }

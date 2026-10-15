@@ -1,0 +1,17 @@
+/* 
+Q9. Landscape orientation 📱
+Write a media query that changes the body background color to purple when the device is in landscape orientation.
+
+Hint: There is a media feature called orientation.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media (orientation: landscape){
+    body{
+        background-color: purple;
+    }
+}

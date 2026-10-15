@@ -1,0 +1,16 @@
+/* Q1. Change background color
+
+Write a media query to change the background color of the body to lightblue when the screen width is 600px or less.
+
+ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media (max-width:600px){
+    body{
+        background-color: lightblue;
+    }
+}

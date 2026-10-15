@@ -1,0 +1,58 @@
+ES-6 FEATURES
+=============
+let, const
+higher order function
+filter,reduce, map
+call, apply, bind
+classList methods
+promises 
+async and wait 
+=======================================
+
+JS file  -> Code -> Run -> Browser -> Console.window 
+
+JS FIle code is embedded into html and html is rendered on Browser which use Javascript Engine to run Javascript.
+Each browser has their specific JS Engine
+Eg Chrome -> V8 Engine 
+   Edge -> Chakra
+   Firefox -> SpiderMonkey
+
+
+JS Engine -> Parser -> Abstract Syntax Tree
+               |
+            JIT Compiler -> Interpreter -> Processor 
+
+EXPLAINATION
+============by Sir 
+-The Javascript code is received by Javascript Engine which is present in browser.
+-Firstly javascript code is received by parser which separates the code into smaller chunks such as functions, variables, operators.
+-Now the code is sent to Abstract syntax tree. A deeply tree structure which represents grammatical logic of program and also keeps the track of every type of code.
+- Now the code received by Just In Time Compiler(JIT) which converts source code into byte code and check the high level syntax.
+- The code which be sent to the Interpreter which executes code line by line. Next the code will be tranferred to Processor which converts bytecode into high level language 
+===========================================================================================================
+
+// Printing Statements of Javascript
+console.log()
+document.write()  [depricated]
+document.writeln()  [depricated] [gives space after printing]
+consoel.table()
+alert()
+confirm()
+prompt()
+
+EG.
+console.log("Hello World")
+document.write("<h1>This is my heading</h1>")
+document.write("<h1>This is my heading</h1>")
+document.writeln("<p>This is paragraph</p>")
+document.writeln("<p>This is paragraph</p>")
+
+let arr = [10,20,30,40]
+console.table(arr)
+
+alert("Form successfully submitted")
+
+confirm("Are You Sure? DO you want to submit the form ?")
+
+otp = prompt("Enter the OTP")
+document.write("<h1>"+otp+"</h1>")

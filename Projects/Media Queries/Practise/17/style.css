@@ -1,0 +1,28 @@
+/* 
+Q7. Combining three conditions 🔥
+Set .card width to 300px only when all three conditions are true:
+
+The viewport is at least 768px wide.
+
+The viewport is in landscape orientation.
+
+The user prefers a light color scheme.
+
+Write a single media query combining all three conditions using and.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
+@media (width>=768px) and (orientation: landscape) and (prefers-color-scheme: light){
+    .card{
+        width: 300px;
+    }
+}

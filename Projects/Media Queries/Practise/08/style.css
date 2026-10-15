@@ -1,0 +1,32 @@
+/* 
+Q8. Multiple breakpoints 🔥
+Write media queries for .box with these background colors:
+Red when the screen width is 400px or less.
+Blue when the screen width is from 401px to 768px.
+Yellow when the screen width is greater than 768px.
+You need to write all three media queries.
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    height: 100vh;
+    width: 100%;
+}
+@media (max-width:400px) {
+    .box{
+        background-color: red;
+    }
+}
+@media(min-width:401px) and (max-width:768px){
+    .box{
+        background-color: blue;
+    }
+}
+@media(min-width:768.01px){
+    .box{
+        background-color: yellow;
+    }
+}

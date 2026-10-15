@@ -1,0 +1,18 @@
+/* 
+Q8. The not condition
+Write a media query that applies font-size: 20px to all p elements when the viewport is not wider than 600px.
+
+Hint: You can solve this with width <= 600px. Try using the not keyword if you want an extra challenge.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media not (min-width:600.01px){
+    p{
+        font-size:20px;
+    }    
+}

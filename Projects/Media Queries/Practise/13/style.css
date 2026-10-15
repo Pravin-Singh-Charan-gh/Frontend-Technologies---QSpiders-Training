@@ -1,0 +1,30 @@
+/* 
+Q3. Hover support 🖱️
+Change a button's background color to blue on hover, but only on devices that support hovering.
+
+Write the media query and the CSS rule for the button.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 20px;
+}
+@media(hover: hover){
+    button:hover{
+        background-color: blue;
+    }
+}

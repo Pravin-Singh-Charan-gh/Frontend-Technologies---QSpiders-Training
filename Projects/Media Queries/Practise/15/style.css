@@ -1,0 +1,35 @@
+/* Q5. Wide screens 🖥️
+Hide .sidebar when the viewport width is less than 900px.
+
+Write your media query. Be careful about the difference between less than and less than or equal to! 💻 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar{
+    height: 40vh;
+    width: 10%;
+    outline: 1px solid;
+}
+.sidebar ul{
+    height: inherit;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+@media(width<900px){
+    .sidebar{
+        display: none;
+    }
+}

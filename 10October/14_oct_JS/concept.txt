@@ -1,0 +1,49 @@
+Javascript
+===========
+Javascript is scripting as well as programming language which is readable, analyzable and executable
+
+Founder : Brenden Eich ->1995
+Netsape Navigator (Now Chrome)-> Browser company
+Name : Mocha(first name) -> livescript(second name) -> Javascript (final name)
+
+
+MODERN JS 
+=========
+It is developed for web developed
+|
+ES6 -> ECMAScript Version 6(2015)
+ECMA : American COmputer Manufacturing Assocaiation
+
+
+FEATURES OF JAVASCRIPT
+=======================
+1. IT IS A CLIENT SIDE SCRIPTING LANGUAGE
+2. IT IS A SERVER SIDE SCRIPTING LANGUAGE 
+3. IT IS A INTERPRETED LANGUAGE
+4. IT IS LOOSELY TYPED LANGUAGE
+5. IT IS DYNAMICALLY TYPED LANGUAGE
+6. IT IS DIREDCTLY EMBEDDED TO HTML
+7. TI SUPPORTS DOM MANIPULATION
+8. IT SUPPORTS ASYNCHRONOUS PROGRAMMING
+===============================================================================================================
+
+OPerators
+===============
+
+DATA TYPES IN Javascript
+========================
+(A) Primitive Data TYPES
+(i) Number : 1, 20, 21.5, 6234617263712
+(ii) String: '',"", ``
+        EG. 'R', "Rohit"
+(iii) Boolean : true , false
+(iv) undefined : 
+(v) null  : empty variables
+(vi) BigInt()  : large numbers
+(vii) Symbol()
+
+
+(B) NOn primitive Data Types 
+(i) Object
+(ii) Arrays
+(iii) function

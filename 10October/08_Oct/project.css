@@ -13,6 +13,7 @@
 
     display: flex;
 }
+
 .navbar .first{
     height: 80px;
     width: 65%;
@@ -47,13 +48,12 @@
     font-size: 15px;
 }
 
-
 /* HOME */
 .home{
     height: 80vh;
     width: 100%;
-    background-image: url("https://wallpapers-clan.com/wp-content/uploads/2026/02/lofi-datsun-240z-palm-trees-retro-sunset-desktop-wallpaper-cover.jpg");
-    background-size: contain;
+    background-image: url("./vk.jpg");
+    background-size: cover;
     position: relative;
     filter: grayscale(100);
 }
@@ -72,26 +72,39 @@
 .about{
     height: 100vh;
     width: 100%;
-    background-color: salmon;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .about .image{
-    height: 400px;
+    height: 450px;
     width: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow: hidden;
+    box-shadow: 0px 0px 10px 2px white;
 }
 .about .image img{
     height: inherit;
+    width: inherit;
+    transition: transform 0.5s ease;
 }
 .about .image img:hover{
     transform: scale(1.2);
-    transition: 0.2s;
 }
 .about .para{
     height: 450px;
     width: 700px;
-    background-color: yellow;
+    padding: 30px;
+    color: white;
+    line-height: 25px;
+    box-shadow: 0px 0px 10px 2px white;
+    text-align: justify;
+}
+
+.about .para h1{
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color:red;
 }

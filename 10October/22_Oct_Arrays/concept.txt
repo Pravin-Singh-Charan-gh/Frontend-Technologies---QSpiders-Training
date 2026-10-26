@@ -1,0 +1,22 @@
+----------
+| ARRAYS Interation methods|
+----------
+
+filter()   MOst used
+map()      array Interation methods
+forEach()
+some()
+every()
+reduce()
+reduceright()
+
+TYPES OF Functions
+named
+anonymous
+firctclass
+arrow
+nested
+
+higher order function :
+    A function which accepts another function as a argument is higher orfer function 
+call back function

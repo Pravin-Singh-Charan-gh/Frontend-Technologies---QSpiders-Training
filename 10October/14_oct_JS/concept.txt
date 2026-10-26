@@ -22,12 +22,12 @@ FEATURES OF JAVASCRIPT
 3. IT IS A INTERPRETED LANGUAGE
 4. IT IS LOOSELY TYPED LANGUAGE
 5. IT IS DYNAMICALLY TYPED LANGUAGE
-6. IT IS DIREDCTLY EMBEDDED TO HTML
+6. IT IS DIRECTLY EMBEDDED TO HTML
 7. TI SUPPORTS DOM MANIPULATION
 8. IT SUPPORTS ASYNCHRONOUS PROGRAMMING
 ===============================================================================================================
 
-OPerators
+Operators
 ===============
 
 DATA TYPES IN Javascript
@@ -43,7 +43,7 @@ DATA TYPES IN Javascript
 (vii) Symbol()
 
 
-(B) NOn primitive Data Types 
+(B) NOn primitive Data Types
 (i) Object
 (ii) Arrays
 (iii) function

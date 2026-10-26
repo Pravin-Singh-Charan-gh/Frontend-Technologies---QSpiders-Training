@@ -1,0 +1,26 @@
+Hoisting
+==========
+
+
+TDZ (Temporal Dead Zone)
+========================
+log (a) -> ERROR
+let a = 20
+log(a) -> 20
+
+Global or public variable
+--------------------------
+place = "Pune"
+console.log(place)
+
+
+// let name = "ABC"
+
+
+const name1 = "Gayatri"
+if(true){
+    // console.log(name1)   // ERROR  Cannot access 'name1' before initialization
+    let name1 = "Chanadana"
+    console.log(name1)
+}
+console.log(name1)

@@ -1,0 +1,55 @@
+Types of Functions we have discussed
+=======================================
+
+Named Function
+Anonymous Function
+First class Function (First citizen fxn or expression.....)
+arrow Function 
+nested Function
+    closure
+    lexical 
+2 more function are their but for that we need to understand array 
+
+scopes 
+========
+global
+local
+block
+function
+nexted function
+
+============================================
+ARRAYS
+------
+It is ordered collection of homogenous and heterogeneous values.
+
+Ways to declare array 
+1. By literal
+-------------
+let arr = []
+let names = ['saniya','leena','vanita','malhar','sahil','harshal']
+console.log(names)
+
+// Accessing single value  // Array indexing starts from 0
+console.log(names[0])
+
+2. By using new constructor
+let arr = new Array()
+or 
+let arr = new Array(2,34,5,5,6,7)
+
+3. By declaring the size 
+let n1 = new Array(105)
+console.log(n1)
+n1[4] = "Dagdu Sheth"
+n1[78] = "Lavasa"
+n1[150] = "Streets of Europe"
+console.log(n1) // (151) [empty × 4, 'Dagdu Sheth', empty × 73, 'Lavasa', empty × 71, 'Streets of Europe']
+
+
+ARRAY METHODS
+=================
+.push()
+.pop()
+.unshift()
+.shift()

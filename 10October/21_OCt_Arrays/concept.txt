@@ -1,0 +1,10 @@
+slice() and splice()
+=====================
+
+.indexOf()
+.includes()
+.lastIndexOf()
+.sort()
+.reverse()
+.concat()
+.join()

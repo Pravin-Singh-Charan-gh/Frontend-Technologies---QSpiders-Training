@@ -1,0 +1,26 @@
+Function
+=======
+Function is a block of statements or code which is used to perform some specifict task repetitevely.
+
+Syntax:
+function indentifier(Paremeters = variables){
+	// Code
+	// Statements
+}
+
+indentifier(Arguments->values)
+
+
+FOR NOTES
+===========
+FUnctions
+Definition
+Types
+	named -> hoisted, window object
+	anonymous
+NAN
+What happens if we pass less arguments 
+What happens if we pass more arguments
+
+
+// String templates

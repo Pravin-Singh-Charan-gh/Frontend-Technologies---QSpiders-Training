@@ -1,0 +1,12 @@
+Methods of Object
+===================
+
+Object.keys(obj)
+Object.values(obj)
+Object.entries(obj)
+Object.seal(obj)   : no add, no delete , can updates
+Object.isSealed(obj)  
+Object.freeze(obj)    : no add, no delete , no updates
+Object.isFrozen(obj)
+
+Assign()

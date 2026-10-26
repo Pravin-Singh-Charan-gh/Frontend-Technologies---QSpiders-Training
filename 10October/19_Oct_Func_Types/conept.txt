@@ -1,0 +1,67 @@
+TYPES Of FUnctions================
+=========================================
+
+1. Anonymous Function
+======================
+let, var,const
+Not hoisted if used let and const
+recommended to store in let
+
+ALso called first classs function
+ALso called function with expression
+ALso called first citizen function
+
+Mostly used in React
+const App = function(){
+    return (
+        <div>Hello</div>
+    )
+}
+
+let task = function(){
+    ///////////////
+}
+
+task()
+
+Variable declared inside function cannot be accessed outside including var
+
+
+2. Arrow Function
+=====================
+Arrow function is known for its short syntax 
+it is introduced in ES6 COncepts
+Most used JS Function in front end
+ALso called First class function with arrow function
+Systax : ()=>{}
+
+eg 
+let task = ()=>{
+    console.log("Hello)
+}
+task()
+
+
+
+
+
+
+
+//scopes
+global scope 
+{
+    local scope 
+}
+if (true){
+    block scope
+}
+function task(){
+    function scope 
+}
+function outer(){
+    function inner(){
+        //lexical scope chain or closure
+        // Accessing the parent function property or variable inside a function
+        // Cannot access variables declared inside inner function in outer scope
+    }
+}

@@ -3,70 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: Arial, Helvetica, sans-serif;
-}
-.navbar{
-  min-height: 60px;
-  width: 100%;
-  background-color: bisque;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.navbar .logo{
-  min-height: 60px;
-  min-width: 360px;
+
+.box{
+  margin: 300px;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(218, 39, 39);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-size: 25px;
-  font-weight: 600;
-}
-.navbar .logo span{
-  color: purple;
-}
-.navbar .right{
-  align-items: center;
-}
-.navbar .right ul{
-  min-height: 60px;
-  min-width: 360px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.navbar .right ul li a{
-  text-decoration: none;
-  color: black;
-}
-.navbar .right ul li a button{
-  padding: 5px 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(28, 16, 131);
-  color: white;
-  font-weight: 500;
-}
-.navbar .right ul li a button:hover{
-  background-color: black;
-  outline: 1px solid blue;
-  transition: 0.5s;
 }
 
-@media (max-width:400px) {
-  .navbar{
-    min-height: 40px;
-    align-items: center;
-  }
-  .navbar .right{
-    min-height: 40px;
-  }
-  .navbar .right ul{
-    min-height: 40px;
-  }
+.box:hover{
+  transform: translate(400px);
+  transition-duration: 2s;
+  /* transition-timing-function: ease-in-out; */
+  transition-timing-function: cubic-bezier(1,0.1,1,0.1); 
 }

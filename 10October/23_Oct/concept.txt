@@ -1,0 +1,18 @@
+filter(ele,ind,arr)
+filter() is a array iteration method which is used to pass condition on every array element and gives result to every array element and ib boolean......... 
+
+map()
+Map() is a array iteration method which is used to pass condition on every array element and gives result to every array element.
+
+
+map return true and false if the condition is written in return condition
+
+.map(ele,index,arr)
+
+======================
+.forEach() : returns undefined
+
+.reduce (ele1,ele2,ind,arr)
+
+
+bakcticks

@@ -51,7 +51,7 @@ emp.subject = "Maths"
 emp.age = 56
 console.log(emp)        // {Name: 'Nitin', age: 23}
 
-// in 
+// in
 obj = {
     add : {
         city : 'Pune',

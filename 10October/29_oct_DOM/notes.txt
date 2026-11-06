@@ -1,0 +1,20 @@
+DOM
+What we can do dom
+===================
+content
+styling
+attributes
+attributes values
+add content
+remove content
+update content 
+
+HTML COLLECTION                     NODELIST
+=================                  ==========
+returns className, tagName      querySelectorAll()
+
+Collection of HTML              Collection if each node 
+elements 
+
+looks like array where           Array of node where it is iterable.
+we cant iterate                     forEach()

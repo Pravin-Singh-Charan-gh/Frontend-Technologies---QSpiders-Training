@@ -1,0 +1,7 @@
+MODERN EVENTS
+==============
+
+.addEventListner() : It is a event handler 
+It accepts 2 arguments,
+    event 
+    call back function

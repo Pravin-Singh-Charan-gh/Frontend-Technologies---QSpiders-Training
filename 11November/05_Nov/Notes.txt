@@ -1,0 +1,9 @@
+classList Methods
+==================
+add()
+remove()
+replace(cl1,cl2)
+.contains()-> true/false 
+.toggle()
+    if class is present -> it will remove it 
+    if class is not present -> it will add

@@ -1,0 +1,10 @@
+.diwali-style{
+    color: orange;
+    background-color: black;
+    /* height: 100px; */
+    padding: 20px;
+    width: 300px;
+    border: 10px solid red;
+    border-radius: 20px;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.style{
+    border: 10px solid hotpink;
+    border-radius: 50%;
+}
+.new-style{
+    border: 20px dashed blue;
+    border-radius: 30px;
+}
+.body{
+    background-color: black;
+}

@@ -1,0 +1,8 @@
+EVENTS
+========
+It is a action performed by user on browser to perform some specific task
+
+Traditional Events 
+    onclick ,
+Modern Events 
+    addEventListenr

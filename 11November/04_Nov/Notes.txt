@@ -1,0 +1,19 @@
+styling in javascript
+=======================
+element.style.
+element.style.
+element.style.
+
+Drawbacks 
+==========
+1. Repeatation of code
+2. Hard Coding 
+3. Advanced CSS Properties
+
+ClassList Methods 
+===================
+add 
+remove 
+replace 
+contains 
+toggle 

@@ -7,6 +7,9 @@
 5. ::marker
 6. ::selection */
 
+/*This works on only inline block elements*/ 
+/*not on span, p etc*/
+
 p::first-letter{
     color: red;
     font-size: 50px;

@@ -27,27 +27,35 @@
 .clouds img{
     height: inherit;
 }
-.bike{
+
+
+.bike {
     height: 200px;
-    left: -50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
     margin-bottom: 120px;
 }
-.bike-body{
-    height: 250px;
-    z-index: 2;
-}
-.wheel{
+
+.wheel {
     height: 105px;
     position: relative;
-    z-index:-1;
+    z-index: 1;
+}
+
+.bike-body {
+    height: 250px;
+    position: relative;
+    z-index: 2;
 }
 .wheel:first-child{
-    top: 18px;
+    top: 90px;
     left:165px;
 }
 .wheel:last-child{
-    top: 35px;
-    right: 175px;
+    top: 100px;
+    right: 170px;
 } 
 .parent:hover{
     .bike{
@@ -57,6 +65,5 @@
     .wheel{
         transform: rotate(10000deg);
         transition: 10s;
-
     }
 }

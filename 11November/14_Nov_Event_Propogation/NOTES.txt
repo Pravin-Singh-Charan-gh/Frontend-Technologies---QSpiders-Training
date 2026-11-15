@@ -1,0 +1,30 @@
+events
+========
+
+basic events 
+-------------
+click 
+doblclick
+mouseoever
+mouse out
+key pres
+pey doen
+jey outscroll
+play 
+pasuse 
+
+form
+submit
+input
+change
+focus
+blur
+
+
+EVENT PROPAGATION
+====
+It is the process of event that how event travels throughout DOM Tree.
+
+1. Bubbling phase : child to parent 
+2. target phase  
+3. Capturing phase : parent to child

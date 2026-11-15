@@ -1,0 +1,12 @@
+Play and pause events 
+
+Form Events
+============
+Submit :
+change : 
+input  : triggers when the input changes 
+focus  : focus on the field
+blur : loosing the focus 
+
+select 
+reset

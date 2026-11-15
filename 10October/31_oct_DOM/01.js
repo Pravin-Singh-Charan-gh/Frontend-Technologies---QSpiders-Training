@@ -1,5 +1,6 @@
 // 5 selectors
 // createElement
+// attribute assing and setAttribute()
 // appendChild
 // append  : accepsts many arguments
 // prepend

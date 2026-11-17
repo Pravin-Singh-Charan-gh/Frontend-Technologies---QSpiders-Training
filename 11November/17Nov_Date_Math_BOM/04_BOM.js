@@ -1,0 +1,5 @@
+console.log(document)
+console.log(location.href)
+console.log(screen)
+console.log(navigator)
+console.log(localStorage)

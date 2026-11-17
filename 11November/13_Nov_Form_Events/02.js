@@ -1,12 +1,13 @@
-let task = document.getElementById("task")
-let btn = document.getElementById("btn")
-let list = document.getElementById("list")
-let count = document.getElementById("count")
+let task = document.getElementById('task')
+let btn = document.getElementById('btn')
+let list = document.getElementById('list')
+let count = document.getElementById('count')
 
-// Enable button when input is not empty
-task.addEventListener("input", () => {
-    btn.disabled = task.value.trim() === ""
+// enable button when the input is not empty
+task.addEventListener('input',()=>{
+    btn.disabled = (task.value.trim() === "")
 })
+
 
 // Add task function
 function addTask() {
@@ -45,12 +46,18 @@ function addTask() {
     }
 }
 
-// Add button click
-btn.addEventListener("click", addTask)
+// button click
+btn.addEventListener('click',addTask)
 
-// Add task using Enter key
-task.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !btn.disabled) {
+
+// task.addEventListener("keydown", (e) => {
+//     if (e.key === "Enter" && !btn.disabled) {
+//         addTask()
+//     }
+// })
+// add task on pressing enter
+task.addEventListener('keydown',(e)=>{
+    if(e.key === "Enter" && !btn.disabled){
         addTask()
     }
 })

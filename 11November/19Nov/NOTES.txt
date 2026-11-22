@@ -1,0 +1,16 @@
+Asynchronise programming
+=========================
+
+Problem -> callback hell
+
+promises : Promise is a real time object which handles asynchoronise operations and also solves the problem of callback hell.
+1. fullfilled
+2. rejected
+3. pending 
+
+async/ await
+
+
+time functions
+setTimeout
+setInterval

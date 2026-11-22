@@ -18,4 +18,3 @@ rep_style.addEventListener('click',()=>{
     pic.classList.remove('style')
     pic.classList.add('new-style') 
 })
-

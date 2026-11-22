@@ -20,19 +20,22 @@ let grandChild = document.getElementById("grandChild")
 //=======================================================
 
 // Capturing Phase : parent to child 
+document.body.addEventListener('click',()=>{
+    console.log('body is clicked')
+},true)
+parent.addEventListener('click',()=>{
+    console.log("Parent clicked")
+    parent.style.backgroundColor = "orange"
+})
+child.addEventListener('click',()=>{
+    console.log("Child clicked")
+    child.style.backgroundColor = "green"
+},true)
+grandChild.addEventListener('click',()=>{
+    console.log("grandChild clicked")
+    grandChild.style.backgroundColor = "yellow"
+},true)
 
-// parent.addEventListener('click',()=>{
-//     console.log("Parent clicked")
-//     parent.style.backgroundColor = "orange"
-// },true)
-// child.addEventListener('click',()=>{
-//     console.log("Child clicked")
-//     child.style.backgroundColor = "green"
-// },true)
-// grandChild.addEventListener('click',()=>{
-//     console.log("grandChild clicked")
-//     grandChild.style.backgroundColor = "yellow"
-// },true)
 
 
 // ==============================================
@@ -58,18 +61,18 @@ let grandChild = document.getElementById("grandChild")
 
 
 //========================
-parent.addEventListener('click',(ev)=>{
-    console.log("Parent clicked")
-    parent.style.backgroundColor = "orange"
-    ev.stopPropagation()
-},true)
-child.addEventListener('click',(ev)=>{
-    console.log("Child clicked")
-    child.style.backgroundColor = "green"
-    ev.stopPropagation()
-},true)
-grandChild.addEventListener('click',(ev)=>{
-    console.log("grandChild clicked")
-    grandChild.style.backgroundColor = "yellow"
-    ev.stopPropagation()
-},true)
+// parent.addEventListener('click',(ev)=>{
+//     console.log("Parent clicked")
+//     parent.style.backgroundColor = "orange"
+//     ev.stopPropagation()
+// },true)
+// child.addEventListener('click',(ev)=>{
+//     console.log("Child clicked")
+//     child.style.backgroundColor = "green"
+//     ev.stopPropagation()
+// },true)
+// grandChild.addEventListener('click',(ev)=>{
+//     console.log("grandChild clicked")
+//     grandChild.style.backgroundColor = "yellow"
+//     ev.stopPropagation()
+// },true)
